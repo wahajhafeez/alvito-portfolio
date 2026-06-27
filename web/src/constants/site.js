@@ -2,9 +2,9 @@
 // Rename the studio in ONE place by editing BRAND below.
 
 export const BRAND = {
-  name: 'SoftMind Solutions',
-  short: 'SoftMind',
-  logoSuffix: '.studio',
+  name: 'Alvito Tech',
+  short: 'Alvito',
+  logoSuffix: '.tech',
 };
 
 export const TAGLINE =
@@ -16,7 +16,7 @@ export const HERO_HEADLINE = {
 };
 
 export const HERO_SUB =
-  'SoftMind Solutions designs and develops high-converting websites, apps, brands and marketing for solar installers, boutique B2B consultants and high-end local businesses. 100+ clients served.';
+  'Alvito Tech designs and develops high-converting websites, apps, brands and marketing for solar installers, boutique B2B consultants and high-end local businesses. 100+ clients served.';
 
 // Audience chips shown under the hero headline
 export const NICHE_CHIPS = [

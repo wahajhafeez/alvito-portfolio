@@ -3,7 +3,7 @@ export const EXPERIENCE_ITEMS = [
   {
     id: 1,
     type: 'milestone',
-    title: 'SoftMind Solutions Founded',
+    title: 'Alvito Tech Founded',
     company: 'The studio begins',
     location: 'Remote',
     period: '2021',
@@ -44,7 +44,7 @@ export const EXPERIENCE_ITEMS = [
     location: 'Worldwide',
     period: '2024 – Present',
     description:
-      'Over 100 businesses now trust SoftMind Solutions to design, build and grow their digital presence — with a 5-star average satisfaction rating.',
+      'Over 100 businesses now trust Alvito Tech to design, build and grow their digital presence — with a 5-star average satisfaction rating.',
     technologies: ['Web Apps', 'Mobile Apps', 'Growth', 'Support'],
     icon: 'Users',
   },

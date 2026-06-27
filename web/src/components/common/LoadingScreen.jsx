@@ -29,11 +29,15 @@ const LoadingScreen = () => {
       ease: 'power2.inOut',
       snap: { innerHTML: 1 },
     })
-      .to(barRef.current, {
-        width: '100%',
-        duration: 1.8,
-        ease: 'power2.inOut',
-      }, '<')
+      .to(
+        barRef.current,
+        {
+          width: '100%',
+          duration: 1.8,
+          ease: 'power2.inOut',
+        },
+        '<'
+      )
       .to({}, { duration: 0.3 });
 
     // Kill animation on cleanup (handles React StrictMode double-invoke)
@@ -45,23 +49,21 @@ const LoadingScreen = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background"
+      className="bg-background fixed inset-0 z-[9999] flex flex-col items-center justify-center"
     >
       <div className="mb-8 text-center">
-        <span className="gradient-text font-space text-5xl font-bold">WH</span>
-        <p className="mt-2 text-sm tracking-[0.4em] text-muted-foreground uppercase">
-          Portfolio
-        </p>
+        <span className="gradient-text font-space text-5xl font-bold">AT</span>
+        <p className="text-muted-foreground mt-2 text-sm tracking-[0.4em] uppercase">Portfolio</p>
       </div>
 
-      <div className="w-64 overflow-hidden rounded-full bg-muted/30">
+      <div className="bg-muted/30 w-64 overflow-hidden rounded-full">
         <div
           ref={barRef}
-          className="h-0.5 w-0 rounded-full bg-gradient-to-r from-primary to-accent"
+          className="from-primary to-accent h-0.5 w-0 rounded-full bg-gradient-to-r"
         />
       </div>
 
-      <div className="mt-4 font-mono text-xs text-muted-foreground">
+      <div className="text-muted-foreground mt-4 font-mono text-xs">
         <span ref={counterRef}>0</span>%
       </div>
     </div>

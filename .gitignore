@@ -8,3 +8,5 @@ dist/
 .vscode/
 coverage/
 .claude/
+package-lock.json
+CLAUDE.md
