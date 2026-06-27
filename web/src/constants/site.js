@@ -7,8 +7,7 @@ export const BRAND = {
   logoSuffix: '.tech',
 };
 
-export const TAGLINE =
-  'A design & development studio that turns visitors into clients.';
+export const TAGLINE = 'A design & development studio that turns visitors into clients.';
 
 export const HERO_HEADLINE = {
   pre: 'We build websites, apps & brands that',
@@ -25,7 +24,11 @@ export const NICHE_CHIPS = [
   'High-End Local Services',
 ];
 
-export const PRIMARY_CTA = { label: 'Book a Free Call', href: '/contact' };
+export const PRIMARY_CTA = {
+  label: 'Book a Free Call',
+  href: 'https://calendar.app.google/DK5kHCDozmLnhSF39',
+  external: true,
+};
 export const SECONDARY_CTA = { label: 'See Our Work', href: '/work' };
 
 export const TRUST = {
@@ -35,7 +38,7 @@ export const TRUST = {
 };
 
 export const CONTACT = {
-  email: 'wasifhafeez26@gmail.com',
+  email: 'alvitotech@gmail.com',
   responseTime: '24–48 hours',
   location: 'Remote · Worldwide',
 };

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router';
 import { ArrowRight, Calendar } from 'lucide-react';
 import StarRating from '@/components/common/StarRating';
 import { PRIMARY_CTA, TRUST } from '@/constants/site';
@@ -26,14 +25,16 @@ const CtaSection = () => {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              to={PRIMARY_CTA.href}
+            <a
+              href={PRIMARY_CTA.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-2 rounded-xl bg-primary px-8 py-3.5 font-semibold text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-primary/50 hover:-translate-y-0.5"
             >
               <Calendar size={18} />
               {PRIMARY_CTA.label}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-            </Link>
+            </a>
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <StarRating rating={TRUST.rating} size={14} />

@@ -32,5 +32,5 @@ export const SOCIAL_LINKS = [
   { label: 'GitHub', href: 'https://github.com/wasifhafeez', icon: 'Github' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/wasifhafeez', icon: 'Linkedin' },
   { label: 'Twitter', href: 'https://twitter.com/wasifhafeez', icon: 'Twitter' },
-  { label: 'Email', href: 'mailto:wasifhafeez26@gmail.com', icon: 'Mail' },
+  { label: 'Email', href: 'mailto:alvitotech@gmail.com', icon: 'Mail' },
 ];
