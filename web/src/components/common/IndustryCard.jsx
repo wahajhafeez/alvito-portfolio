@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Sun, Presentation, Gem, ArrowUpRight } from 'lucide-react';
+import { Sun, Presentation, Gem, Monitor, Code2, Smartphone, ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const ICON_MAP = { Sun, Presentation, Gem };
+const ICON_MAP = { Sun, Presentation, Gem, Monitor, Code2, Smartphone };
 
 const IndustryCard = ({ industry, index = 0 }) => {
   const Icon = ICON_MAP[industry.icon] || Sun;
