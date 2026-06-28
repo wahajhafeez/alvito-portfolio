@@ -131,13 +131,13 @@ const ContactSection = () => {
                     <select
                       {...register('service')}
                       defaultValue=""
-                      className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary"
+                      className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary [&>option]:bg-background [&>option]:text-foreground"
                     >
-                      <option value="" disabled>
+                      <option value="" disabled className="bg-background text-foreground">
                         Select a service…
                       </option>
                       {SERVICE_OPTIONS.map((opt) => (
-                        <option key={opt} value={opt}>
+                        <option key={opt} value={opt} className="bg-background text-foreground">
                           {opt}
                         </option>
                       ))}
@@ -151,11 +151,11 @@ const ContactSection = () => {
                     <select
                       {...register('budget')}
                       defaultValue=""
-                      className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary"
+                      className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary [&>option]:bg-background [&>option]:text-foreground"
                     >
-                      <option value="">Select a range…</option>
+                      <option value="" className="bg-background text-foreground">Select a range…</option>
                       {BUDGET_OPTIONS.map((opt) => (
-                        <option key={opt} value={opt}>
+                        <option key={opt} value={opt} className="bg-background text-foreground">
                           {opt}
                         </option>
                       ))}

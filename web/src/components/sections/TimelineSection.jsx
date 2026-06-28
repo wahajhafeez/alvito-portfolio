@@ -46,7 +46,7 @@ const TimelineItem = ({ item, index }) => {
           {item.technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-md bg-muted/50 px-2 py-0.5 text-xs text-muted-foreground"
+              className="rounded-md bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary"
             >
               {tech}
             </span>
