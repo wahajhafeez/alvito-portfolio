@@ -1,8 +1,9 @@
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import SectionHeading from '@/components/common/SectionHeading';
-import TechSphere from '@/components/three/TechSphere';
+
+const TechSphere = lazy(() => import('@/components/three/TechSphere'));
 import { SKILL_CATEGORIES } from '@/constants/skills';
 
 const SkillsSection = () => {
