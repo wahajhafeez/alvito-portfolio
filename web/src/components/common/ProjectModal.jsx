@@ -1,29 +1,25 @@
+import { createPortal } from 'react-dom';
 import { ExternalLink, Github, X, Tag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
 
-  return (
+  return createPortal(
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 overflow-y-auto"
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
         onClick={onClose}
       >
-        {/* backdrop */}
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" />
-
-        {/* centering wrapper */}
-        <div className="flex min-h-full items-center justify-center p-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.92, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.92, y: 24 }}
             transition={{ type: 'spring', damping: 26, stiffness: 300 }}
-            className="glass relative w-full max-w-2xl overflow-hidden rounded-2xl"
+            className="glass relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* close button */}
@@ -36,7 +32,7 @@ const ProjectModal = ({ project, onClose }) => {
 
             {/* banner image */}
             {project.imageUrl && (
-              <div className="relative h-56 w-full overflow-hidden sm:h-64">
+              <div className="relative h-[clamp(7rem,26vh,16rem)] w-full overflow-hidden">
                 <img
                   src={project.imageUrl}
                   alt={project.title}
@@ -114,9 +110,9 @@ const ProjectModal = ({ project, onClose }) => {
               </div>
             </div>
           </motion.div>
-        </div>
       </motion.div>
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
 

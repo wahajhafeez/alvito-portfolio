@@ -1,138 +1,211 @@
 export const PROJECTS = [
   {
-    _id: 'solar-edge-pro',
-    title: 'SolarEdge Pro — Solar CRM & Lead Funnel',
+    _id: 'leagues-gg',
+    title: 'Leagues.gg — Esports Stats & Social Platform',
     description:
-      'A full-stack CRM and lead generation platform built for a solar installation company. Converts site visitors into booked appointments with automated follow-ups.',
+      'A social statistics platform for competitive gamers to follow friends and favourite players, track live performance metrics, and build community around League of Legends, VALORANT, and osu!',
     longDescription:
-      'Built with React 19, Node.js, Express, and MongoDB. Features a lead capture funnel, automated email sequences via Nodemailer, a CRM dashboard with pipeline stages, appointment scheduling, and PDF quote generation. Integrated Google Maps API for service area visualisation and Stripe for deposit collection.',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Tailwind CSS', 'Nodemailer'],
+      'Alvito Tech built the full stack for Leagues.gg, an esports companion app that pulls live ranked data and match history for thousands of players. The React and MUI frontend renders leaderboards, match timelines, and player comparison cards with smooth, real-time updates. The Node.js/Express backend connects to game publisher APIs, aggregates stats into MongoDB, and serves fast paginated endpoints. Key features include friend-following feeds, per-champion performance breakdowns, and customisable player profile pages.',
+    techStack: ['React', 'MUI', 'Node.js', 'Express', 'MongoDB'],
     category: 'fullstack',
-    featured: true,
-    order: 1,
-    status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
-    githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    _id: 'consult-pro',
-    title: 'ConsultPro — B2B Coaching Platform',
-    description:
-      'A subscription-based coaching and course platform for boutique B2B consultants. Includes live sessions, resource library, and client progress tracking.',
-    longDescription:
-      'Multi-role SaaS built with React, Express, and MongoDB. Features Stripe subscription billing (monthly & annual), a video resource library, live session scheduling via Calendly API, client onboarding flows, and a progress dashboard. Includes a private community feed and direct messaging between coach and client.',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Framer Motion', 'Tailwind CSS'],
-    category: 'fullstack',
-    featured: true,
-    order: 2,
-    status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
-    githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    _id: 'luxe-local',
-    title: 'LuxeLocal — High-End Local Business Website',
-    description:
-      'A premium marketing website for a high-end interior design firm. Drives enquiries through immersive visuals, testimonials, and a booking form.',
-    longDescription:
-      'Built with React 19, Vite, Tailwind CSS v4, Framer Motion, and GSAP. Features full-screen hero with parallax scroll, animated project gallery with lightbox, video background sections, Google Reviews integration, and a multi-step contact form. SEO-optimised with structured data and Open Graph tags.',
-    techStack: ['React', 'Framer Motion', 'GSAP', 'Tailwind CSS', 'Vite', 'Nodemailer'],
-    category: 'frontend',
     featured: true,
     order: 3,
     status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
+    liveUrl: 'https://leagues.gg/',
     githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://s0.wp.com/mshots/v1/https://leagues.gg/?w=800&h=450',
   },
   {
-    _id: 'clean-quote',
-    title: 'CleanQuote — Cleaning Service Booking App',
+    _id: 'procurement-league',
+    title: 'Procurement League — B2B Learning Community',
     description:
-      'An instant online booking and quoting system for a residential cleaning company. Customers get a live price and book a slot in under 2 minutes.',
+      'A full-stack B2B platform accelerating innovation in procurement practice through courses, expert-led events, community discussion, and a rich resource library for procurement professionals worldwide.',
     longDescription:
-      'Full-stack app with React frontend and Node.js/Express backend. Features a multi-step booking wizard, dynamic pricing engine based on property size and extras, Stripe payment, automated SMS reminders via Twilio, and an admin dashboard with calendar view and job assignment.',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Twilio', 'React Hook Form'],
+      'Alvito Tech developed the full stack for Procurement League, a professional development hub serving procurement and supply-chain leaders globally. The platform features a course and content library, live and on-demand event management, member community forums, and expert contributor profiles. Built with React, MUI, and Tailwind CSS on the frontend and Node.js/Express with MongoDB on the backend, it handles membership gating, role-based access for contributors vs. members, and integrated payment flows for premium content subscriptions.',
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
     category: 'fullstack',
     featured: false,
     order: 4,
     status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
+    liveUrl: 'https://procurementleague.com/',
     githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1584820927498-cad076eee68c?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://s0.wp.com/mshots/v1/https://procurementleague.com/?w=800&h=450',
   },
   {
-    _id: 'brand-forge',
-    title: 'BrandForge — Brand Identity Landing Page',
+    _id: 'influencify',
+    title: 'Influencify — Influencer Marketing Platform',
     description:
-      'A conversion-focused landing page for a branding agency. A/B tested headline variants, animated case study carousel, and a Calendly-integrated booking flow.',
+      'A full-stack influencer marketing platform giving brands and agencies access to 250M+ creator profiles across YouTube and TikTok, with advanced filtering, campaign management, and ROI tracking.',
     longDescription:
-      'Pixel-perfect React + Vite build with Tailwind CSS v4 and Framer Motion. Includes animated SVG logo reveal, scrolling testimonial ticker, before/after slider for brand transformations, and an embedded Calendly popup for direct booking. Achieved 94/100 Lighthouse score on first load.',
-    techStack: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'GSAP', 'Calendly API'],
-    category: 'frontend',
-    featured: false,
-    order: 5,
-    status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
-    githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    _id: 'reach-api',
-    title: 'ReachAPI — Marketing Automation REST API',
-    description:
-      'A production-ready REST API powering email campaigns, contact segmentation, and webhook delivery for a marketing automation tool.',
-    longDescription:
-      'Node.js + Express API with MongoDB, JWT authentication, and role-based access control. Features contact list management, email sequence scheduling with Bull queues, webhook delivery with retry logic, campaign analytics aggregation, and a Swagger UI for documentation. Deployed on Render with Redis for queue management.',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Bull', 'Redis', 'Swagger'],
-    category: 'backend',
-    featured: false,
-    order: 6,
-    status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
-    githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    _id: 'trade-flow',
-    title: 'TradeFlow — Trades Business Management App',
-    description:
-      'A job management and invoicing app for tradespeople — plumbers, electricians, and builders. Replaces paper-based workflows with a clean mobile-first UI.',
-    longDescription:
-      'Full-stack React + Node.js app with a mobile-first Tailwind CSS UI. Features job card creation, photo upload via Cloudinary, GPS-tagged job site check-ins, PDF invoice generation, client portal for approvals and payments via Stripe, and a real-time notification system using Socket.io.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Cloudinary', 'Stripe', 'Tailwind CSS'],
+      'Alvito Tech built the complete full-stack application for Influencify, a data-driven influencer discovery and campaign management tool. The React frontend with MUI components powers a sophisticated search and filter UI across a database of 250 million creator profiles, with analytics dashboards for engagement rates, audience demographics, and campaign ROI. The Node.js/Express backend handles high-volume API ingestion from YouTube and TikTok, serves a white-label developer API, and manages multi-role access for brands, agencies, and administrators. MongoDB stores creator profiles, campaign records, and relationship management data.',
+    techStack: ['React', 'MUI', 'Node.js', 'Express', 'MongoDB'],
     category: 'fullstack',
     featured: true,
-    order: 7,
+    order: 5,
     status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
+    liveUrl: 'https://influencify.co/',
     githubUrl: null,
-    imageUrl:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://s0.wp.com/mshots/v1/https://influencify.co/?w=800&h=450',
   },
   {
-    _id: 'stats-pulse',
-    title: 'StatsPulse — Analytics Dashboard',
+    _id: 'tugamemaster',
+    title: 'TuGameMaster — Game Session Booking Platform',
     description:
-      'A white-label analytics dashboard for digital marketing agencies. Pulls data from Google Analytics, Meta Ads, and Google Ads into one clean view.',
+      'A full-stack marketplace bridging casual gamers with professional game masters. Game masters list and manage sessions; players browse, book, and pay — all in one place.',
     longDescription:
-      'React frontend with a Node.js/Express backend. Integrates Google Analytics Data API, Meta Marketing API, and Google Ads API via OAuth2. Features customisable widget layouts, scheduled PDF report generation, multi-client account switching, and a role-based permission system for agency staff and clients.',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Google APIs', 'Meta API', 'Recharts'],
+      'Alvito Tech built the complete full-stack application for TuGameMaster, a niche marketplace for tabletop and online gaming sessions. Professional game masters can sign up, build a profile showcasing their skills and experience, schedule sessions with flexible pricing, and receive payouts via Stripe Connected Accounts. Players browse sessions by game title, duration, cost, and required experience level, then book and pay securely in-app. The platform also features a blog for gaming content, a real-time chat system between masters and players, a booking management dashboard, and a payout tracking panel. Built with React and Ant Design on the frontend, Redux for state, NestJS with PostgreSQL on the backend, and Stripe for end-to-end payment processing.',
+    techStack: ['React', 'Ant Design', 'Redux', 'NestJS', 'PostgreSQL', 'Stripe'],
     category: 'fullstack',
-    featured: false,
-    order: 8,
+    featured: true,
+    order: 6,
     status: 'completed',
-    liveUrl: 'https://alvito-portfolio.vercel.app',
+    liveUrl: null,
     githubUrl: null,
     imageUrl:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+      'https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_portfolio_project_grid_non_exp/v1/attachments/project_item/attachment/8819cb6cc63d7329a877a31e8ed6547e-1714287264049/Screenshot%202024-04-28%20114614.png',
+  },
+  {
+    _id: 'yoogo',
+    title: 'Yoogo — Social Marketplace Platform',
+    description:
+      'A unified social marketplace where creators, businesses, and shoppers connect to share content, discover products, and transact — all with 100% organic reach and zero algorithmic gatekeeping.',
+    longDescription:
+      'Alvito Tech built the complete frontend for Yoogo, a next-generation social commerce platform that merges content creation, community, and commerce in one place. We engineered a custom video player with adaptive streaming, integrated Braintree for seamless in-app payments, and wired real-time features via WebSockets so users see live updates across feeds and storefronts. The UI was built with Next.js, MUI, and Tailwind CSS, with Redux managing a complex global state across creator dashboards, marketplace listings, and buyer flows.',
+    techStack: ['Next.js', 'MUI', 'Tailwind CSS', 'Redux', 'WebSockets', 'Braintree'],
+    category: 'frontend',
+    featured: true,
+    order: 1,
+    status: 'completed',
+    liveUrl: 'https://www.yoogo.com/',
+    githubUrl: null,
+    imageUrl: 'https://s0.wp.com/mshots/v1/https://www.yoogo.com/?w=800&h=450',
+  },
+  {
+    _id: 'canonizer',
+    title: 'Canonizer — Consensus & Opinion Mapping',
+    description:
+      'A full-stack platform for structured debate and collaborative consensus-building. Users propose, refine, and rank competing ideas with real-time animated visualisations that show how opinion camps evolve over time.',
+    longDescription:
+      'Alvito Tech delivered a full-stack rebuild of Canonizer — a unique deliberative democracy tool where users form "camps" around ideas and track consensus in real time. We architected the backend with NestJS and a relational SQL database to handle complex hierarchical topic trees and camp membership logic. On the frontend, Next.js with Ant Design and Tailwind CSS powers a clean, information-dense UI, while D3.js drives animated tree and timeline visualisations that make shifting consensus immediately visible. Redux handles global state across deeply nested topic threads and live voting flows.',
+    techStack: ['Next.js', 'Ant Design', 'Tailwind CSS', 'Redux', 'D3.js', 'NestJS', 'SQL'],
+    category: 'fullstack',
+    featured: true,
+    order: 2,
+    status: 'completed',
+    liveUrl: 'https://canonizer.com/',
+    githubUrl: null,
+    imageUrl: 'https://s0.wp.com/mshots/v1/https://canonizer.com/?w=800&h=450',
+  },
+  {
+    _id: 'voltora-solar',
+    title: 'Voltora Solar — Solar Energy Platform',
+    description:
+      'A clean, conversion-focused frontend for a solar energy company. Showcases services, system packages, and drives lead generation with a modern UI built for solar installers.',
+    longDescription:
+      'Alvito Tech built the complete frontend for Voltora Solar, a solar energy company website designed to educate visitors and convert them into qualified leads. The React + MUI + Tailwind CSS build features a responsive layout, animated service sections, package comparison tables, a testimonials carousel, and an enquiry form. Redux manages UI state across multi-step user flows.',
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux'],
+    category: 'frontend',
+    featured: false,
+    order: 7,
+    status: 'completed',
+    liveUrl: 'https://voltora-solar-800168759398.asia-southeast1.run.app/',
+    githubUrl: null,
+    imageUrl: '/projects/solar-panel.webp',
+  },
+  {
+    _id: 'nexus-grid',
+    title: 'Nexus Grid — Solar Management System',
+    description:
+      'A smart solar monitoring platform with real-time energy tracking, performance analytics, instant alerts, and detailed reports — maximising output and system reliability.',
+    longDescription:
+      'Alvito Tech developed the full frontend for Nexus Grid, a solar management SaaS dashboard. Built with React, MUI, Tailwind CSS, and Redux, the application provides a real-time monitoring dashboard tracking total generation, current power output, and system efficiency. Key features include energy generation charts, CO₂ savings tracking, smart control panels, instant alert notifications, and scheduled performance reports — all presented in a clean, data-dense UI optimised for solar operators.',
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux'],
+    category: 'frontend',
+    featured: true,
+    order: 8,
+    status: 'completed',
+    liveUrl: 'https://nexus-grid-energy-c8drw2odr.vercel.app/',
+    githubUrl: null,
+    imageUrl: '/projects/solar-2.webp',
+  },
+  {
+    _id: 'lumiere-aesthetics',
+    title: 'Lumière Aesthetics — Beauty Clinic Website',
+    description:
+      'A premium website for a high-end aesthetic and beauty clinic. Designed to build trust, showcase treatments, and drive appointment bookings through an elegant, luxury UI.',
+    longDescription:
+      "Alvito Tech built the frontend for Lumière Aesthetics, a boutique beauty and wellness clinic. The React + MUI + Tailwind CSS site features a luxury design language with warm tones, smooth animations, a treatments catalogue, before/after galleries, practitioner profiles, client testimonials, and an online appointment booking form. The UI was crafted to reflect the clinic's premium brand and convert visitors into booked consultations.",
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux'],
+    category: 'frontend',
+    featured: false,
+    order: 9,
+    status: 'completed',
+    liveUrl: 'https://lumi-re-aesthetics-800168759398.asia-southeast1.run.app/',
+    githubUrl: null,
+    imageUrl: '/projects/lumi.webp',
+  },
+  {
+    _id: 'oralence-smile',
+    title: 'Oralence Smile Studio — Dental Clinic Website',
+    description:
+      'A modern dental clinic website covering general, cosmetic, and paediatric dentistry. Clean, trustworthy design with service listings, team profiles, and an appointment booking flow.',
+    longDescription:
+      'Alvito Tech designed and built the frontend for Oralence Smile Studio, a full-service dental practice. The React + MUI + Tailwind CSS site lists all treatment categories — general dentistry, cosmetic dentistry, orthodontics, implants, teeth whitening, and paediatric care — with dedicated service pages, a meet-the-team section, patient testimonials, and an online appointment request form. The teal and white colour scheme reinforces clinical trust while keeping the experience welcoming.',
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux'],
+    category: 'frontend',
+    featured: false,
+    order: 10,
+    status: 'completed',
+    liveUrl: 'https://oralence-smile-studio-dne6ato5y.vercel.app/',
+    githubUrl: null,
+    imageUrl: '/projects/oralence-smile.webp',
+  },
+  {
+    _id: 'valancia-leisure',
+    title: 'Valancia Leisure Club — Community & Lifestyle',
+    description:
+      'A lifestyle and community club website featuring sports, education, wellness, and family amenities — designed to attract memberships and showcase the full club experience.',
+    longDescription:
+      "Alvito Tech built the frontend for Valancia Leisure Club, a premium family lifestyle community. The React + MUI + Tailwind CSS site showcases the club's full range of amenities — library and learning spaces, children's play areas, sports courts, yoga and fitness classes, and landscaped family grounds. Animated image collages, a membership plans section, facilities explorer, and event calendar drive engagement and membership sign-ups. Redux handles UI state across interactive filters and booking flows.",
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux'],
+    category: 'frontend',
+    featured: false,
+    order: 11,
+    status: 'completed',
+    liveUrl: 'https://valancia-leisure-club-m3wcwpk47.vercel.app/',
+    githubUrl: null,
+    imageUrl: '/projects/valancia-leisure-club.webp',
+  },
+  {
+    _id: 'finance-tracker',
+    title: 'Finance Tracker — Personal Finance Dashboard',
+    description:
+      'A full-stack personal finance management app with income/expense tracking, budget planning, savings goals, investment monitoring, and detailed category reports.',
+    longDescription:
+      'Alvito Tech built the complete full-stack Finance Tracker application. The React + MUI + Tailwind CSS dashboard displays a real-time overview of total balance, income, expenses, and savings progress. Features include cash flow charts, expenses-by-category doughnut charts, transaction history, budget vs. actual spend tracking per category, savings goal progress bars, bill reminders, and an investments section. The Node.js/Express backend with MongoDB stores all user financial data, with a freemium model offering a premium upgrade for unlimited accounts and advanced reporting.',
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux', 'Node.js', 'Express', 'MongoDB'],
+    category: 'fullstack',
+    featured: true,
+    order: 12,
+    status: 'completed',
+    liveUrl: 'https://personal-finance-tracker-1dynbw3we.vercel.app/',
+    githubUrl: null,
+    imageUrl: '/projects/personal-finance.webp',
+  },
+  {
+    _id: 'solarops-pro',
+    title: 'SolarOps Pro — Solar ERP Management System',
+    description:
+      'A comprehensive full-stack Solar ERP platform managing leads, projects, customers, inventory, procurement, finance, installation, and maintenance for solar businesses.',
+    longDescription:
+      'Alvito Tech built the full-stack SolarOps Pro ERP system for solar installation companies. The React + MUI + Tailwind dashboard provides an admin overview of total projects (128), installed capacity (2.45 MW), total sales ($1.24M), and outstanding invoices. Modules include lead management, project tracking with status pipelines (completed/in-progress/pending/on-hold), customer CRM, solar panel and inverter inventory, procurement, finance with revenue vs. expense charts, installation scheduling, and maintenance tracking. The Node.js/Express backend with MongoDB powers all modules with role-based access control.',
+    techStack: ['React', 'MUI', 'Tailwind CSS', 'Redux', 'Node.js', 'Express', 'MongoDB'],
+    category: 'fullstack',
+    featured: true,
+    order: 13,
+    status: 'completed',
+    liveUrl: 'https://solarops-dl8fco5ia-ayeshaashrafsoftmindsolutions-5658s-projects.vercel.app/',
+    githubUrl: null,
+    imageUrl: '/projects/solar-erp.webp',
   },
 ];

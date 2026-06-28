@@ -31,7 +31,7 @@ const VALUES = [
 ];
 
 const STATS = [
-  { value: '100+', label: 'Clients Served' },
+  { value: '50+', label: 'Clients Served' },
   { value: '100+', label: 'Projects Delivered' },
   { value: '3', label: 'Industries' },
   { value: '5★', label: 'Avg Rating' },
@@ -59,7 +59,7 @@ const AboutSection = () => {
               <div className="relative">
                 <div className="gradient-border h-48 w-48 overflow-hidden rounded-2xl">
                   <div className="bg-muted/30 flex h-full w-full items-center justify-center text-6xl font-bold">
-                    <span className="gradient-text font-space">SM</span>
+                    <span className="gradient-text font-space">AT</span>
                   </div>
                 </div>
                 {/* Decorative ring */}

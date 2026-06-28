@@ -1,8 +1,10 @@
+import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Calendar, MousePointer } from 'lucide-react';
 import { Link } from 'react-router';
-import CanvasWrapper from '@/components/three/CanvasWrapper';
-import FloatingObjects from '@/components/three/FloatingObjects';
+
+const CanvasWrapper = lazy(() => import('@/components/three/CanvasWrapper'));
+const FloatingObjects = lazy(() => import('@/components/three/FloatingObjects'));
 import TypingAnimation from '@/components/common/TypingAnimation';
 import StarRating from '@/components/common/StarRating';
 import {
@@ -17,11 +19,13 @@ import {
 const HeroSection = () => {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* 3D Background */}
+      {/* 3D Background — lazy so hero text renders before Three.js loads */}
       <div className="absolute inset-0 -z-10">
-        <CanvasWrapper cameraPosition={[0, 0, 8]}>
-          <FloatingObjects />
-        </CanvasWrapper>
+        <Suspense fallback={null}>
+          <CanvasWrapper cameraPosition={[0, 0, 8]}>
+            <FloatingObjects />
+          </CanvasWrapper>
+        </Suspense>
       </div>
 
       {/* Gradient overlays */}
