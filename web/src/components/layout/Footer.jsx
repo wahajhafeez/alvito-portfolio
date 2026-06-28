@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground">
           <p className="flex items-center justify-center gap-1">
             Crafted with <Heart size={12} className="text-red-400" /> by{' '}
-            <span className="text-primary">{BRAND.name}</span> &mdash; {new Date().getFullYear()}
+            <span className="text-primary">{BRAND.name}</span> &mdash; 2021
           </p>
         </div>
       </div>
