@@ -15,7 +15,7 @@ export const HERO_HEADLINE = {
 };
 
 export const HERO_SUB =
-  'Alvito Tech designs and develops high-converting websites, apps, brands and marketing for solar installers, boutique B2B consultants and high-end local businesses. 100+ clients served.';
+  'Alvito Tech designs and develops high-converting websites, apps, brands and marketing for solar installers, boutique B2B consultants and high-end local businesses. 50+ clients served.';
 
 // Audience chips shown under the hero headline
 export const NICHE_CHIPS = [
@@ -33,7 +33,7 @@ export const SECONDARY_CTA = { label: 'See Our Work', href: '/work' };
 export const TRUST = {
   rating: 5,
   clients: '100+',
-  line: 'Trusted by 100+ clients worldwide',
+  line: 'Trusted by 50+ clients worldwide',
 };
 
 export const CONTACT = {
