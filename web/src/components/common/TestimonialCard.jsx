@@ -39,9 +39,6 @@ const TestimonialCard = ({ testimonial, index = 0 }) => {
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold text-foreground">{name}</p>
-          <p className="truncate text-xs text-muted-foreground">
-            {role}, {company}
-          </p>
         </div>
         {niche && (
           <span className="ml-auto hidden flex-shrink-0 rounded-full bg-primary/10 px-2 py-0.5 text-xs text-primary sm:inline">
