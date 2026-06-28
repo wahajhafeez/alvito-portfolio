@@ -26,8 +26,7 @@ export const NICHE_CHIPS = [
 
 export const PRIMARY_CTA = {
   label: 'Book a Free Call',
-  href: 'https://calendar.app.google/DK5kHCDozmLnhSF39',
-  external: true,
+  href: 'https://calendly.com/alvitotech/1-hour-meeting',
 };
 export const SECONDARY_CTA = { label: 'See Our Work', href: '/work' };
 

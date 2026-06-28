@@ -105,16 +105,14 @@ const HeroSection = () => {
             transition={{ delay: 0.7, duration: 0.7 }}
             className="flex flex-wrap items-center gap-4"
           >
-            <a
-              href={PRIMARY_CTA.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => window.Calendly?.initPopupWidget({ url: PRIMARY_CTA.href })}
               className="group flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/40 hover:-translate-y-0.5"
             >
               <Calendar size={16} />
               {PRIMARY_CTA.label}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-            </a>
+            </button>
             <Link
               to={SECONDARY_CTA.href}
               className="glass flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-foreground transition-all hover:border-primary/30 hover:text-primary hover:-translate-y-0.5"

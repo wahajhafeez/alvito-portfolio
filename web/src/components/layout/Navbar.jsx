@@ -81,15 +81,13 @@ const Navbar = () => {
           </button>
 
           {/* Primary CTA */}
-          <a
-            href={PRIMARY_CTA.href}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => window.Calendly?.initPopupWidget({ url: PRIMARY_CTA.href })}
             className="hidden items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-md shadow-primary/25 transition-all hover:bg-primary/90 hover:-translate-y-0.5 md:flex"
           >
             <Calendar size={14} />
             {PRIMARY_CTA.label}
-          </a>
+          </button>
 
           {/* Mobile Toggle */}
           <button
@@ -129,15 +127,13 @@ const Navbar = () => {
                   {link.label}
                 </NavLink>
               ))}
-              <a
-                href={PRIMARY_CTA.href}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => window.Calendly?.initPopupWidget({ url: PRIMARY_CTA.href })}
                 className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-white shadow-md shadow-primary/25"
               >
                 <Calendar size={15} />
                 {PRIMARY_CTA.label}
-              </a>
+              </button>
             </nav>
           </motion.div>
         )}

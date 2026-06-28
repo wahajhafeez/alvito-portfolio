@@ -25,16 +25,14 @@ const CtaSection = () => {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href={PRIMARY_CTA.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => window.Calendly?.initPopupWidget({ url: PRIMARY_CTA.href })}
               className="group flex items-center gap-2 rounded-xl bg-primary px-8 py-3.5 font-semibold text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-primary/50 hover:-translate-y-0.5"
             >
               <Calendar size={18} />
               {PRIMARY_CTA.label}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-            </a>
+            </button>
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <StarRating rating={TRUST.rating} size={14} />
