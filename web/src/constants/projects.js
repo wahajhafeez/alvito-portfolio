@@ -1,11 +1,6 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-dotenv.config();
-
-import Project from '../models/Project.js';
-
-const projects = [
+export const PROJECTS = [
   {
+    _id: 'solar-edge-pro',
     title: 'SolarEdge Pro — Solar CRM & Lead Funnel',
     description:
       'A full-stack CRM and lead generation platform built for a solar installation company. Converts site visitors into booked appointments with automated follow-ups.',
@@ -18,9 +13,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'consult-pro',
     title: 'ConsultPro — B2B Coaching Platform',
     description:
       'A subscription-based coaching and course platform for boutique B2B consultants. Includes live sessions, resource library, and client progress tracking.',
@@ -33,9 +30,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'luxe-local',
     title: 'LuxeLocal — High-End Local Business Website',
     description:
       'A premium marketing website for a high-end interior design firm. Drives enquiries through immersive visuals, testimonials, and a booking form.',
@@ -48,9 +47,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'clean-quote',
     title: 'CleanQuote — Cleaning Service Booking App',
     description:
       'An instant online booking and quoting system for a residential cleaning company. Customers get a live price and book a slot in under 2 minutes.',
@@ -63,9 +64,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1584820927498-cad076eee68c?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1584820927498-cad076eee68c?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'brand-forge',
     title: 'BrandForge — Brand Identity Landing Page',
     description:
       'A conversion-focused landing page for a branding agency. A/B tested headline variants, animated case study carousel, and a Calendly-integrated booking flow.',
@@ -78,9 +81,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'reach-api',
     title: 'ReachAPI — Marketing Automation REST API',
     description:
       'A production-ready REST API powering email campaigns, contact segmentation, and webhook delivery for a marketing automation tool.',
@@ -93,9 +98,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'trade-flow',
     title: 'TradeFlow — Trades Business Management App',
     description:
       'A job management and invoicing app for tradespeople — plumbers, electricians, and builders. Replaces paper-based workflows with a clean mobile-first UI.',
@@ -108,9 +115,11 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
   },
   {
+    _id: 'stats-pulse',
     title: 'StatsPulse — Analytics Dashboard',
     description:
       'A white-label analytics dashboard for digital marketing agencies. Pulls data from Google Analytics, Meta Ads, and Google Ads into one clean view.',
@@ -123,30 +132,7 @@ const projects = [
     status: 'completed',
     liveUrl: 'https://alvito-portfolio.vercel.app',
     githubUrl: null,
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
   },
 ];
-
-const seed = async () => {
-  try {
-    if (!process.env.MONGODB_URI) {
-      throw new Error('MONGODB_URI not set in .env');
-    }
-
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log('Connected to MongoDB');
-
-    await Project.deleteMany({});
-    console.log('Cleared existing projects');
-
-    const created = await Project.insertMany(projects);
-    console.log(`Seeded ${created.length} projects successfully`);
-
-    process.exit(0);
-  } catch (err) {
-    console.error('Seed failed:', err.message);
-    process.exit(1);
-  }
-};
-
-seed();
