@@ -17,7 +17,7 @@ const TimelineItem = ({ item, index }) => {
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className={`relative flex w-full items-start gap-4 md:w-1/2 ${
-        isLeft ? 'md:pr-12 md:self-end md:flex-row-reverse md:text-right' : 'md:pl-12 md:ml-auto'
+        isLeft ? 'md:flex-row-reverse md:self-end md:pr-12 md:text-right' : 'md:ml-auto md:pl-12'
       }`}
     >
       {/* Icon bubble */}
@@ -26,27 +26,29 @@ const TimelineItem = ({ item, index }) => {
           isLeft ? 'md:absolute md:-right-6' : 'md:absolute md:-left-6'
         }`}
       >
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-white shadow-lg shadow-primary/30">
+        <div className="from-primary to-accent shadow-primary/30 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br text-white shadow-lg">
           <Icon size={18} />
         </div>
       </div>
 
       {/* Card */}
-      <div className="glass flex-1 rounded-xl p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30">
+      <div className="glass hover:border-primary/30 flex-1 rounded-xl p-5 transition-all duration-300 hover:-translate-y-1">
         <div className="mb-1 flex flex-wrap items-center gap-2">
-          <span className="rounded-full bg-primary/20 px-2.5 py-0.5 text-xs font-medium text-primary capitalize">
+          <span className="bg-primary/20 text-primary rounded-full px-2.5 py-0.5 text-xs font-medium capitalize">
             {item.type}
           </span>
-          <span className="text-xs text-muted-foreground">{item.period}</span>
+          <span className="text-muted-foreground text-xs">{item.period}</span>
         </div>
-        <h3 className="mb-0.5 font-semibold text-foreground">{item.title}</h3>
-        <p className="mb-3 text-sm text-accent">{item.company} · {item.location}</p>
-        <p className="mb-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+        <h3 className="text-foreground mb-0.5 font-semibold">{item.title}</h3>
+        <p className="text-accent mb-3 text-sm">
+          {item.company} · {item.location}
+        </p>
+        <p className="text-muted-foreground mb-3 text-sm leading-relaxed">{item.description}</p>
         <div className="flex flex-wrap gap-1.5">
           {item.technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-md bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary"
+              className="bg-primary/10 text-primary rounded-md px-2.5 py-0.5 text-xs font-semibold"
             >
               {tech}
             </span>
@@ -63,13 +65,13 @@ const TimelineSection = () => {
       <div className="container-custom">
         <SectionHeading
           title="Our Journey"
-          subtitle="From a one-person web studio to a full-service team trusted by 100+ clients."
+          subtitle="From a one-person web studio to a full-service team trusted by 50+ clients."
         />
 
         {/* Desktop: alternating timeline | Mobile: single column */}
         <div className="relative">
           {/* Center line (desktop) */}
-          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-primary/50 via-accent/30 to-transparent md:block" />
+          <div className="from-primary/50 via-accent/30 absolute top-0 left-1/2 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b to-transparent md:block" />
 
           <div className="flex flex-col gap-8">
             {EXPERIENCE_ITEMS.map((item, index) => (
