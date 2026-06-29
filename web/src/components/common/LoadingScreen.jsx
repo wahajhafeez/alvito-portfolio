@@ -52,7 +52,7 @@ const LoadingScreen = () => {
       className="bg-background fixed inset-0 z-[9999] flex flex-col items-center justify-center"
     >
       <div className="mb-8 text-center">
-        <span className="gradient-text font-space text-5xl font-bold">AT</span>
+        <img src="/alvito-logo.png" alt="Alvito Tech logo" className="mx-auto -mb-12 h-44 w-44 object-contain" />
         <p className="text-muted-foreground mt-2 text-sm tracking-[0.4em] uppercase">Portfolio</p>
       </div>
 

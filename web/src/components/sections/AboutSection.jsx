@@ -58,8 +58,12 @@ const AboutSection = () => {
             <div className="mb-8 flex justify-center lg:justify-start">
               <div className="relative">
                 <div className="gradient-border h-48 w-48 overflow-hidden rounded-2xl">
-                  <div className="bg-muted/30 flex h-full w-full items-center justify-center text-6xl font-bold">
-                    <span className="gradient-text font-space">AT</span>
+                  <div className="bg-muted/30 flex h-full w-full items-center justify-center p-5">
+                    <img
+                      src="/alvito-logo.png"
+                      alt={`${BRAND.name} logo`}
+                      className="h-full w-full object-contain"
+                    />
                   </div>
                 </div>
                 {/* Decorative ring */}
