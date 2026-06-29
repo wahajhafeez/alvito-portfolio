@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import StatCounter from '@/components/common/StatCounter';
-import LogoMarquee from '@/components/common/LogoMarquee';
+// import LogoMarquee from '@/components/common/LogoMarquee';
 import { STATS } from '@/constants/stats';
 
 const StatsBar = () => {
@@ -24,12 +24,12 @@ const StatsBar = () => {
         </div>
 
         {/* Client wordmark marquee */}
-        <div className="mt-14">
+        {/* <div className="mt-14">
           <p className="mb-6 text-center text-xs uppercase tracking-widest text-muted-foreground">
             Trusted by businesses worldwide
           </p>
           <LogoMarquee />
-        </div>
+        </div> */}
       </div>
     </section>
   );

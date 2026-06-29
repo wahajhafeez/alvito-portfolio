@@ -10,18 +10,18 @@ export const BRAND = {
 export const TAGLINE = 'A design & development studio that turns visitors into clients.';
 
 export const HERO_HEADLINE = {
-  pre: 'We build websites, apps & brands that',
-  highlight: 'win you more clients',
+  pre: 'We build websites, web applications & mobile apps that',
+  highlight: 'drive growth',
 };
 
 export const HERO_SUB =
-  'Alvito Tech designs and develops high-converting websites, apps, brands and marketing for solar installers, boutique B2B consultants and high-end local businesses. 50+ clients served.';
+  'Alvito Tech specializes in designing modern websites, developing powerful web applications, and creating mobile apps that help businesses attract customers, improve efficiency, and scale faster. 50+ clients served.';
 
-// Audience chips shown under the hero headline
+// Service chips shown under the hero headline
 export const NICHE_CHIPS = [
-  'Solar Installers',
-  'B2B Consulting & Coaching',
-  'High-End Local Services',
+  'Website Designing',
+  'Web Application Development',
+  'Mobile App Development',
 ];
 
 export const PRIMARY_CTA = {

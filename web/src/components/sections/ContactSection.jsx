@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { motion } from 'framer-motion';
 import { Send, Mail, MapPin, Clock } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 import SectionHeading from '@/components/common/SectionHeading';
 import GlassCard from '@/components/common/GlassCard';
-import { useContact } from '@/hooks/useContact';
 import { SERVICES } from '@/constants/services';
 import { CONTACT } from '@/constants/site';
 
@@ -27,7 +29,7 @@ const INFO_ITEMS = [
 ];
 
 const ContactSection = () => {
-  const { mutate: sendMessage, isPending } = useContact();
+  const [isPending, setIsPending] = useState(false);
 
   const {
     register,
@@ -36,15 +38,29 @@ const ContactSection = () => {
     formState: { errors },
   } = useForm({ resolver: zodResolver(schema) });
 
-  const onSubmit = (data) => {
-    // Fold service + budget into the existing subject/message fields (no API change).
-    const payload = {
-      name: data.name,
-      email: data.email,
-      subject: `New project inquiry — ${data.service}`,
-      message: `Service: ${data.service}\nBudget: ${data.budget || 'Not specified'}\n\n${data.message}`,
-    };
-    sendMessage(payload, { onSuccess: () => reset() });
+  const onSubmit = async (data) => {
+    setIsPending(true);
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: data.name,
+          email: data.email,
+          title: data.service,
+          service: data.service,
+          budget: data.budget || 'Not specified',
+          message: data.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+      toast.success('Message sent! We\'ll get back to you within 24–48 hours.');
+      reset();
+    } catch {
+      toast.error('Failed to send message. Please email us directly at ' + CONTACT.email);
+    } finally {
+      setIsPending(false);
+    }
   };
 
   return (

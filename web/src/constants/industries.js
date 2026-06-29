@@ -1,33 +1,29 @@
-// The 3 niches the studio specialises in. `icon` maps to a lucide-react icon in IndustryCard.
 export const INDUSTRIES = [
   {
-    id: 'solar',
-    icon: 'Sun',
-    name: 'Solar Energy Installers',
-    tagline: 'More booked installs, less wasted ad spend',
-    pain: 'Great installs, but a website that doesn’t turn quote-seekers into booked jobs.',
+    id: 'website-design',
+    icon: 'Monitor',
+    name: 'Website Design',
+    tagline: 'Modern designs that convert visitors into customers',
     promise:
-      'We build trust-building sites and landing pages with instant quote forms and proof that convert solar shoppers into booked consultations.',
-    outcomes: ['Quote & booking funnels', 'Local SEO & ads', 'Before/after proof'],
+      'We create visually engaging, user-focused websites designed to build trust, strengthen your brand, and drive more inquiries and sales.',
+    outcomes: ['Responsive website design', 'UI/UX focused layouts', 'SEO-friendly structure'],
   },
   {
-    id: 'consulting',
-    icon: 'Presentation',
-    name: 'Boutique B2B Consulting & Coaching',
-    tagline: 'Authority that attracts qualified leads',
-    pain: 'You’re an expert — but the brand online doesn’t reflect your premium value.',
+    id: 'web-apps',
+    icon: 'Code2',
+    name: 'Web Application Development',
+    tagline: 'Custom solutions that streamline and scale your business',
     promise:
-      'We craft authority-driven brands, sites and content that position you as the obvious choice and fill your calendar with qualified leads.',
-    outcomes: ['Premium brand & site', 'Lead-gen funnels', 'Content that builds authority'],
+      'We develop powerful web applications tailored to your workflow, helping you automate processes, improve efficiency, and deliver better user experiences.',
+    outcomes: ['Custom web applications', 'Business automation systems', 'Scalable & secure solutions'],
   },
   {
-    id: 'local',
-    icon: 'Gem',
-    name: 'High-End Local Services',
-    tagline: 'A premium brand that books premium clients',
-    pain: 'Luxury service, but an online presence that looks like everyone else’s.',
+    id: 'mobile-apps',
+    icon: 'Smartphone',
+    name: 'Mobile App Development',
+    tagline: 'Apps that engage users and grow your business',
     promise:
-      'We design standout brands, booking-ready sites and social presence that justify premium pricing and keep your calendar full.',
-    outcomes: ['Luxury brand identity', 'Booking-ready website', 'Social media that sells'],
+      'We build intuitive and high-performance mobile applications that deliver seamless experiences and keep your customers connected.',
+    outcomes: ['Android & iOS apps', 'User-friendly interfaces', 'Performance-driven development'],
   },
 ];

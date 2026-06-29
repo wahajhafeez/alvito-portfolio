@@ -8,7 +8,7 @@ const IndustriesSection = () => {
       <div className="container-custom">
         <SectionHeading
           title="Who We Help"
-          subtitle="We specialise in three industries — so we already understand your customers, your market and what makes them buy."
+          subtitle="We specialise in digital solutions — creating websites, web applications, and mobile apps that help businesses grow, improve customer experience, and scale efficiently."
         />
 
         <div className="grid gap-6 md:grid-cols-3">

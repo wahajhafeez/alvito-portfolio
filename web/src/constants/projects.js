@@ -156,7 +156,7 @@ export const PROJECTS = [
     featured: false,
     order: 10,
     status: 'completed',
-    liveUrl: 'https://oralence-smile-studio-dne6ato5y.vercel.app/',
+    liveUrl: 'https://oralence-smile-studio-9r8ez4wf2.vercel.app/',
     githubUrl: null,
     imageUrl: '/projects/oralence-smile.webp',
   },
