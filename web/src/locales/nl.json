@@ -1,0 +1,404 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "work": "Projecten",
+    "about": "Over ons",
+    "contact": "Contact"
+  },
+  "cta": {
+    "bookCall": "Boek een gratis gesprek",
+    "seeWork": "Bekijk ons werk"
+  },
+  "common": {
+    "scroll": "Scroll",
+    "viewAllWork": "Bekijk alle projecten",
+    "featured": "Uitgelicht",
+    "visitWebsite": "Bezoek website",
+    "sourceCode": "Broncode",
+    "techStack": "Tech-stack"
+  },
+  "hero": {
+    "badge": "We nemen nu nieuwe projecten aan",
+    "headlinePre": "Wij bouwen websites, webapplicaties en mobiele apps die",
+    "headlineHighlight": "groei stimuleren",
+    "deliver": "Wij leveren ",
+    "sub": "Alvito Tech is gespecialiseerd in het ontwerpen van moderne websites, het ontwikkelen van krachtige webapplicaties en het maken van mobiele apps die bedrijven helpen klanten aan te trekken, efficiënter te werken en sneller te groeien. Meer dan 50 klanten geholpen.",
+    "chips": [
+      "Webdesign",
+      "Webapplicatie-ontwikkeling",
+      "Mobiele app-ontwikkeling"
+    ],
+    "typing": [
+      "websites met hoge conversie",
+      "merken die verkopen",
+      "apps die opschalen",
+      "marketing die werkt",
+      "ontwerpen die imponeren"
+    ],
+    "trust": "Meer dan 50 klanten wereldwijd vertrouwen op ons"
+  },
+  "stats": {
+    "clientsServed": "Klanten geholpen",
+    "projectsDelivered": "Projecten opgeleverd",
+    "averageRating": "Gemiddelde beoordeling",
+    "industriesServed": "Sectoren bediend"
+  },
+  "services": {
+    "heading": "Wat we doen",
+    "subtitle": "Eén studio voor alles wat jouw merk nodig heeft om klanten aan te trekken, te overtuigen en te converteren.",
+    "items": {
+      "design": {
+        "title": "Figma-design & branding",
+        "blurb": "Pixelperfecte UI/UX en merkidentiteiten ontworpen in Figma — van wireframes tot verfijnde, conversiegerichte schermen.",
+        "features": ["UI/UX-design", "Merk- & logosystemen", "Designsystemen", "Prototypes"]
+      },
+      "marketing": {
+        "title": "Social media marketing",
+        "blurb": "Content, advertenties en groeicampagnes die jouw merk voor het juiste publiek plaatsen en volgers omzetten in betalende klanten.",
+        "features": ["Contentstrategie", "Betaalde advertentiecampagnes", "Creatives & reels", "Analytics & groei"]
+      },
+      "landing": {
+        "title": "Interactieve landingspagina's",
+        "blurb": "Snelle, geanimeerde landingspagina's met hoge conversie, gebouwd om leads te genereren en gesprekken te boeken — geoptimaliseerd voor elk apparaat.",
+        "features": ["Conversiegericht ontwerp", "Vloeiende animaties", "Leadgeneratie", "Klaar voor A/B-testen"]
+      },
+      "apps": {
+        "title": "Full-stack web- & mobiele apps",
+        "blurb": "Schaalbare web- en mobiele applicaties, end-to-end gebouwd met de MERN-stack en React Native — robuust, veilig en snel.",
+        "features": ["Web-apps (MERN)", "Mobiele apps", "API's & dashboards", "Betalingen & authenticatie"]
+      }
+    }
+  },
+  "industries": {
+    "heading": "Wie we helpen",
+    "subtitle": "We zijn gespecialiseerd in digitale oplossingen — we maken websites, webapplicaties en mobiele apps die bedrijven helpen groeien, de klantervaring verbeteren en efficiënt opschalen.",
+    "items": {
+      "website-design": {
+        "name": "Webdesign",
+        "tagline": "Moderne ontwerpen die bezoekers omzetten in klanten",
+        "promise": "We maken visueel aantrekkelijke, gebruikersgerichte websites die zijn ontworpen om vertrouwen op te bouwen, je merk te versterken en meer aanvragen en verkopen te genereren.",
+        "outcomes": ["Responsief webdesign", "Op UI/UX gerichte lay-outs", "SEO-vriendelijke structuur"]
+      },
+      "web-apps": {
+        "name": "Webapplicatie-ontwikkeling",
+        "tagline": "Maatwerkoplossingen die je bedrijf stroomlijnen en laten groeien",
+        "promise": "We ontwikkelen krachtige webapplicaties op maat van jouw workflow, zodat je processen kunt automatiseren, efficiënter kunt werken en betere gebruikerservaringen kunt bieden.",
+        "outcomes": ["Webapplicaties op maat", "Systemen voor bedrijfsautomatisering", "Schaalbare & veilige oplossingen"]
+      },
+      "mobile-apps": {
+        "name": "Mobiele app-ontwikkeling",
+        "tagline": "Apps die gebruikers boeien en je bedrijf laten groeien",
+        "promise": "We bouwen intuïtieve, krachtige mobiele applicaties die naadloze ervaringen bieden en je klanten verbonden houden.",
+        "outcomes": ["Android- & iOS-apps", "Gebruiksvriendelijke interfaces", "Prestatiegerichte ontwikkeling"]
+      }
+    }
+  },
+  "process": {
+    "heading": "Hoe we werken",
+    "subtitle": "Een helder, samenwerkend proces — zodat je altijd weet wat er gebeurt en waarom.",
+    "items": {
+      "01": {
+        "title": "Ontdekken",
+        "desc": "We leren je bedrijf, je publiek en je doelen kennen — en stippelen vervolgens een strategie uit die is gebouwd om te converteren."
+      },
+      "02": {
+        "title": "Ontwerpen",
+        "desc": "We maken het merk en de interface in Figma en itereren samen met jou tot het goed voelt."
+      },
+      "03": {
+        "title": "Bouwen",
+        "desc": "We ontwikkelen een snelle, responsieve, productieklare site of app met schone, schaalbare code."
+      },
+      "04": {
+        "title": "Lanceren & groeien",
+        "desc": "We lanceren, meten en optimaliseren — met marketing en support om klanten te blijven aantrekken."
+      }
+    }
+  },
+  "experience": {
+    "heading": "Onze reis",
+    "subtitle": "Van een eenmans-webstudio tot een full-service team dat door meer dan 50 klanten wordt vertrouwd.",
+    "type": { "milestone": "Mijlpaal" },
+    "items": {
+      "1": {
+        "title": "Oprichting van Alvito Tech",
+        "company": "De studio begint",
+        "location": "Remote",
+        "period": "2021",
+        "description": "Begonnen als eenmans-webstudio die snelle, moderne websites bouwde — al snel uitgegroeid tot een klein team dat geobsedeerd is door design en resultaten."
+      },
+      "2": {
+        "title": "Uitgebreid naar design & marketing",
+        "company": "Een full-service studio",
+        "location": "Remote",
+        "period": "2022",
+        "description": "Figma-design, branding en social media marketing toegevoegd, zodat klanten alles konden krijgen — strategie, design, ontwikkeling en groei — onder één dak."
+      },
+      "3": {
+        "title": "Uitgebreid naar mobiele & web-app-ontwikkeling",
+        "company": "Full-service digitale studio",
+        "location": "Wereldwijd",
+        "period": "2023",
+        "description": "Verder gegroeid dan websites naar volwaardige mobiele apps, webapplicaties, SaaS-platforms en ERP-systemen — end-to-end digitale producten voor bedrijven wereldwijd met React, Next.js, React Native, Node.js en meer."
+      },
+      "4": {
+        "title": "Meer dan 50 klanten geholpen",
+        "company": "En het worden er meer",
+        "location": "Wereldwijd",
+        "period": "2024 – heden",
+        "description": "Meer dan 100 bedrijven vertrouwen nu op Alvito Tech om hun digitale aanwezigheid te ontwerpen, bouwen en laten groeien — met een gemiddelde tevredenheidsscore van 5 sterren."
+      }
+    }
+  },
+  "skills": {
+    "heading": "Onze expertise",
+    "subtitle": "De design-, marketing- en engineering-toolkit die we gebruiken om de bedrijven van onze klanten te bouwen en te laten groeien.",
+    "categories": {
+      "design": "Design & Branding",
+      "marketing": "Marketing",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobiel & Database",
+      "devops": "DevOps & Cloud"
+    }
+  },
+  "testimonials": {
+    "heading": "Wat klanten zeggen",
+    "subtitle": "Echte resultaten van zonnepaneelinstallateurs, consultants en hoogwaardige lokale bedrijven waarmee we hebben gewerkt.",
+    "niche": {
+      "Solar": "Zonne-energie",
+      "Consulting": "Consultancy",
+      "Local Services": "Lokale diensten",
+      "Coaching": "Coaching"
+    },
+    "items": {
+      "1": {
+        "role": "Oprichter",
+        "quote": "Onze aanvragen voor zonne-offertes zijn binnen zes weken na de lancering van de nieuwe site bijna verdubbeld. De boekingsfunnel die ze bouwden werkt gewoon."
+      },
+      "2": {
+        "role": "Hoofdconsultant",
+        "quote": "Ze hebben van een simpele biopagina een merk gemaakt dat eindelijk bij mijn tarieven past. Ik krijg nu elke week gekwalificeerde leads binnen."
+      },
+      "3": {
+        "role": "Eigenaar",
+        "quote": "Het nieuwe merk en de boekingssite voelen echt premium aan. Klanten maken er opmerkingen over nog voordat ze aankomen — de boekingen zijn enorm gestegen."
+      },
+      "4": {
+        "role": "CEO",
+        "quote": "Professioneel, snel en proactief. De landingspagina's die ze voor onze advertentiecampagnes bouwden, hebben onze kosten per lead bijna gehalveerd."
+      },
+      "5": {
+        "role": "Executive coach",
+        "quote": "Van de Figma-ontwerpen tot de uiteindelijke realisatie, aan elk detail is gedacht. Mijn programma ziet er nu net zo hoogwaardig uit als de resultaten die ik lever."
+      },
+      "6": {
+        "role": "Directeur",
+        "quote": "Ze hebben design, de website en onze social content van begin tot eind verzorgd. Eén team, geen gedoe, en een merk waar we trots op zijn."
+      }
+    }
+  },
+  "about": {
+    "heading": "Over de studio",
+    "subtitle": "Een design- & ontwikkelstudio die ambitieuze bedrijven helpt om er online beter uit te zien — en beter te converteren.",
+    "paragraphs": {
+      "lead": "is een full-service design- & ontwikkelstudio. Wij bouwen de websites, apps, merken en marketing die bezoekers omzetten in klanten.",
+      "second": "We zijn begonnen als kleine webstudio en gegroeid door ons op één ding te focussen: resultaten. Vandaag werken we end-to-end — strategie, Figma-design, full-stack ontwikkeling en social media marketing — zodat onze klanten alles wat ze nodig hebben onder één dak krijgen.",
+      "third": "We richten ons op drie sectoren die we door en door kennen — zonnepaneelinstallateurs, hoogwaardige B2B-consultants & coaches, en premium lokale diensten — zodat elk project rechtstreeks de mensen aanspreekt die je wilt winnen."
+    },
+    "stats": {
+      "clients": "Klanten geholpen",
+      "projects": "Projecten opgeleverd",
+      "industries": "Sectoren",
+      "rating": "Gem. score"
+    },
+    "values": {
+      "results": {
+        "title": "Resultaatgericht",
+        "description": "We ontwerpen voor resultaten — meer leads, meer boekingen, meer omzet. Mooi dat presteert."
+      },
+      "design": {
+        "title": "Designgedreven",
+        "description": "Elk project begint in Figma. Merk, UX en detail zijn nooit een bijzaak."
+      },
+      "fullService": {
+        "title": "Full-service",
+        "description": "Design, ontwikkeling, marketing en support — één team, één aanspreekpunt, geen overdrachten."
+      },
+      "partners": {
+        "title": "Echte partners",
+        "description": "We behandelen jouw bedrijf als ons eigen. Heldere communicatie, eerlijk advies, denken op lange termijn."
+      }
+    }
+  },
+  "projectsSection": {
+    "heading": "Onze projecten",
+    "subtitle": "Een selectie van websites, apps en merken die we voor klanten hebben ontworpen en gebouwd.",
+    "filters": {
+      "all": "Alle",
+      "fullstack": "Fullstack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "categories": {
+      "fullstack": "Fullstack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "status": {
+      "completed": "voltooid",
+      "in-progress": "in uitvoering"
+    },
+    "empty": "Geen projecten gevonden.",
+    "items": {
+      "leagues-gg": {
+        "description": "Een sociaal statistiekplatform voor competitieve gamers om vrienden en favoriete spelers te volgen, live prestatiegegevens bij te houden en een community op te bouwen rond League of Legends, VALORANT en osu!",
+        "longDescription": "Alvito Tech bouwde de volledige full-stack voor Leagues.gg, een esports-companion-app die live ranked-gegevens en wedstrijdgeschiedenis van duizenden spelers ophaalt. De React- en MUI-frontend toont ranglijsten, wedstrijdtijdlijnen en spelervergelijkingskaarten met vloeiende realtime updates. De Node.js/Express-backend maakt verbinding met de API's van game-uitgevers, aggregeert statistieken in MongoDB en levert snelle, gepagineerde endpoints. Belangrijke functies zijn onder meer feeds om vrienden te volgen, prestatieoverzichten per champion en aanpasbare spelersprofielpagina's."
+      },
+      "procurement-league": {
+        "description": "Een full-stack B2B-platform dat innovatie in inkooppraktijken versnelt via cursussen, door experts geleide evenementen, communitydiscussies en een rijke bibliotheek met bronnen voor inkoopprofessionals wereldwijd.",
+        "longDescription": "Alvito Tech ontwikkelde de volledige full-stack voor Procurement League, een hub voor professionele ontwikkeling die wereldwijd inkoop- en supply chain-leiders bedient. Het platform biedt een cursus- en contentbibliotheek, beheer van live- en on-demand-evenementen, communityforums voor leden en profielen van expertbijdragers. Gebouwd met React, MUI en Tailwind CSS in de frontend en Node.js/Express met MongoDB in de backend, beheert het ledentoegang, op rollen gebaseerde toegang voor bijdragers en leden, en geïntegreerde betaalstromen voor premium-contentabonnementen."
+      },
+      "influencify": {
+        "description": "Een full-stack influencer-marketingplatform dat merken en bureaus toegang geeft tot meer dan 250 miljoen creatorprofielen op YouTube en TikTok, met geavanceerde filtering, campagnebeheer en ROI-tracking.",
+        "longDescription": "Alvito Tech bouwde de volledige full-stack-applicatie voor Influencify, een datagedreven tool voor influencer-ontdekking en campagnebeheer. De React-frontend met MUI-componenten levert een geavanceerde zoek- en filterinterface over een database van 250 miljoen creatorprofielen, met analysedashboards voor engagementpercentages, demografie van het publiek en campagne-ROI. De Node.js/Express-backend verwerkt API-ingestie met groot volume van YouTube en TikTok, biedt een white-label-developer-API en beheert toegang voor meerdere rollen voor merken, bureaus en beheerders. MongoDB slaat creatorprofielen, campagnegegevens en relatiebeheergegevens op."
+      },
+      "tugamemaster": {
+        "description": "Een full-stack marktplaats die casual gamers verbindt met professionele game masters. Game masters plaatsen en beheren sessies; spelers bladeren, boeken en betalen — allemaal op één plek.",
+        "longDescription": "Alvito Tech bouwde de volledige full-stack-applicatie voor TuGameMaster, een nichemarktplaats voor tabletop- en online-gamingsessies. Professionele game masters kunnen zich registreren, een profiel opbouwen dat hun vaardigheden en ervaring laat zien, sessies plannen met flexibele prijzen en uitbetalingen ontvangen via Stripe Connected Accounts. Spelers bladeren door sessies op speltitel, duur, prijs en vereist ervaringsniveau, en boeken en betalen vervolgens veilig in de app. Het platform biedt ook een blog voor gamingcontent, een realtime chatsysteem tussen game masters en spelers, een dashboard voor boekingsbeheer en een paneel voor het volgen van uitbetalingen. Gebouwd met React en Ant Design in de frontend, Redux voor state, NestJS met PostgreSQL in de backend, en Stripe voor end-to-end betalingsverwerking."
+      },
+      "yoogo": {
+        "description": "Een verenigde sociale marktplaats waar creators, bedrijven en kopers samenkomen om content te delen, producten te ontdekken en transacties te doen — allemaal met 100% organisch bereik en zonder algoritmische beperkingen.",
+        "longDescription": "Alvito Tech bouwde de volledige frontend voor Yoogo, een social-commerceplatform van de nieuwe generatie dat contentcreatie, community en commerce op één plek samenbrengt. We ontwikkelden een aangepaste videospeler met adaptieve streaming, integreerden Braintree voor naadloze in-app-betalingen en realiseerden realtime functies via WebSockets, zodat gebruikers live updates zien in feeds en winkels. De interface is gebouwd met Next.js, MUI en Tailwind CSS, met Redux die een complexe globale state beheert over creator-dashboards, marktplaatsvermeldingen en koopstromen."
+      },
+      "canonizer": {
+        "description": "Een full-stack platform voor gestructureerd debat en gezamenlijke consensusvorming. Gebruikers stellen voor, verfijnen en rangschikken concurrerende ideeën met realtime geanimeerde visualisaties die laten zien hoe opiniekampen zich in de loop van de tijd ontwikkelen.",
+        "longDescription": "Alvito Tech leverde een full-stack-herbouw van Canonizer — een uniek instrument voor deliberatieve democratie waarbij gebruikers 'kampen' rond ideeën vormen en consensus in realtime volgen. We ontwierpen de backend met NestJS en een relationele SQL-database om complexe hiërarchische onderwerpenbomen en de logica van kamplidmaatschap te beheren. In de frontend levert Next.js met Ant Design en Tailwind CSS een strakke, informatierijke interface, terwijl D3.js geanimeerde boom- en tijdlijnvisualisaties aandrijft die verschuivende consensus onmiddellijk zichtbaar maken. Redux beheert de globale state over diep geneste onderwerpdraden en live-stemstromen."
+      },
+      "voltora-solar": {
+        "description": "Een strakke, conversiegerichte frontend voor een zonne-energiebedrijf. Toont diensten en systeempakketten en stimuleert leadgeneratie met een moderne interface, gebouwd voor zonnepaneelinstallateurs.",
+        "longDescription": "Alvito Tech bouwde de volledige frontend voor Voltora Solar, de website van een zonne-energiebedrijf, ontworpen om bezoekers te informeren en om te zetten in gekwalificeerde leads. De build met React + MUI + Tailwind CSS biedt een responsieve lay-out, geanimeerde dienstensecties, vergelijkingstabellen voor pakketten, een testimonialcarrousel en een aanvraagformulier. Redux beheert de UI-state over meerstapsgebruikersstromen."
+      },
+      "nexus-grid": {
+        "description": "Een slim platform voor zonne-monitoring met realtime energietracking, prestatieanalyses, directe waarschuwingen en gedetailleerde rapporten — om de output en betrouwbaarheid van het systeem te maximaliseren.",
+        "longDescription": "Alvito Tech ontwikkelde de volledige frontend voor Nexus Grid, een SaaS-dashboard voor zonne-energiebeheer. Gebouwd met React, MUI, Tailwind CSS en Redux biedt de applicatie een realtime monitoringdashboard dat de totale opwekking, het actuele vermogen en de systeemefficiëntie bijhoudt. Belangrijke functies zijn grafieken voor energieopwekking, het bijhouden van CO₂-besparingen, slimme bedieningspanelen, directe waarschuwingsmeldingen en geplande prestatierapporten — alles gepresenteerd in een strakke, datarijke interface die is geoptimaliseerd voor zonne-exploitanten."
+      },
+      "lumiere-aesthetics": {
+        "description": "Een premium website voor een hoogwaardige esthetische en schoonheidskliniek. Ontworpen om vertrouwen op te bouwen, behandelingen te tonen en afspraakboekingen te stimuleren via een elegante, luxueuze interface.",
+        "longDescription": "Alvito Tech bouwde de frontend voor Lumière Aesthetics, een boetiekkliniek voor schoonheid en welzijn. De site met React + MUI + Tailwind CSS biedt een luxueuze designtaal met warme tinten, vloeiende animaties, een behandelingscatalogus, voor/na-galerijen, profielen van behandelaars, klantgetuigenissen en een online afsprakenformulier. De interface is ontworpen om het premium merk van de kliniek te weerspiegelen en bezoekers om te zetten in geboekte consulten."
+      },
+      "oralence-smile": {
+        "description": "Een moderne website voor een tandartspraktijk die algemene, cosmetische en kindertandheelkunde omvat. Een strak, betrouwbaar ontwerp met dienstenoverzicht, teamprofielen en een afsprakenboeking.",
+        "longDescription": "Alvito Tech ontwierp en bouwde de frontend voor Oralence Smile Studio, een full-service tandartspraktijk. De site met React + MUI + Tailwind CSS vermeldt alle behandelcategorieën — algemene tandheelkunde, cosmetische tandheelkunde, orthodontie, implantaten, het bleken van tanden en kindertandheelkunde — met aparte dienstenpagina's, een 'maak kennis met het team'-sectie, patiëntgetuigenissen en een online afspraakaanvraagformulier. Het turkoois-witte kleurenschema versterkt het klinische vertrouwen en houdt de ervaring tegelijkertijd uitnodigend."
+      },
+      "valancia-leisure": {
+        "description": "Een lifestyle- en communityclub-website met sport, educatie, welzijn en gezinsvoorzieningen — ontworpen om lidmaatschappen aan te trekken en de volledige clubervaring te tonen.",
+        "longDescription": "Alvito Tech bouwde de frontend voor de Valancia Leisure Club, een premium lifestylecommunity voor gezinnen. De site met React + MUI + Tailwind CSS toont het volledige aanbod aan voorzieningen van de club — bibliotheek- en leerruimtes, speelplekken voor kinderen, sportvelden, yoga- en fitnesslessen, en aangelegde gezinsterreinen. Geanimeerde beeldcollages, een sectie met lidmaatschapsplannen, een faciliteitenverkenner en een evenementenkalender stimuleren betrokkenheid en aanmeldingen. Redux beheert de UI-state over interactieve filters en boekingsstromen."
+      },
+      "finance-tracker": {
+        "description": "Een full-stack app voor persoonlijk financieel beheer met het bijhouden van inkomsten/uitgaven, budgetplanning, spaardoelen, investeringsmonitoring en gedetailleerde categorierapporten.",
+        "longDescription": "Alvito Tech bouwde de volledige full-stack Finance Tracker-applicatie. Het dashboard met React + MUI + Tailwind CSS toont een realtime overzicht van het totale saldo, inkomsten, uitgaven en spaarvoortgang. Functies zijn onder meer cashflow-grafieken, ringdiagrammen van uitgaven per categorie, transactiegeschiedenis, het bijhouden van budget versus werkelijke uitgaven per categorie, voortgangsbalken voor spaardoelen, factuurherinneringen en een investeringssectie. De Node.js/Express-backend met MongoDB slaat alle financiële gegevens van gebruikers op, met een freemium-model dat een premium-upgrade biedt voor onbeperkte accounts en geavanceerde rapportage."
+      },
+      "solarops-pro": {
+        "description": "Een uitgebreid full-stack Solar ERP-platform dat leads, projecten, klanten, voorraad, inkoop, financiën, installatie en onderhoud beheert voor zonne-energiebedrijven.",
+        "longDescription": "Alvito Tech bouwde het full-stack SolarOps Pro ERP-systeem voor zonnepaneelinstallatiebedrijven. Het dashboard met React + MUI + Tailwind biedt een beheeroverzicht van het totale aantal projecten (128), het geïnstalleerde vermogen (2,45 MW), de totale verkoop ($ 1,24 mln) en openstaande facturen. Modules omvatten leadbeheer, projecttracking met statuspijplijnen (voltooid/in uitvoering/in afwachting/on hold), klant-CRM, voorraad van zonnepanelen en omvormers, inkoop, financiën met grafieken voor omzet versus uitgaven, installatieplanning en onderhoudstracking. De Node.js/Express-backend met MongoDB drijft alle modules aan met op rollen gebaseerde toegangscontrole."
+      }
+    }
+  },
+  "ctaSection": {
+    "headlinePre": "Klaar om bezoekers om te zetten in",
+    "headlineHighlight": "betalende klanten?",
+    "subtitle": "Boek een gratis, vrijblijvend gesprek. We bekijken je huidige aanwezigheid en laten je precies zien hoe je kunt groeien."
+  },
+  "contact": {
+    "heading": "Laten we je bedrijf laten groeien",
+    "subtitle": "Vertel ons over je project en je doelen. We nemen binnen 24–48 uur contact met je op met de volgende stappen.",
+    "infoHeading": "Boek een gratis kennismakingsgesprek",
+    "infoBody": "Of je nu een nieuwe website, een merkvernieuwing, een app of een marketingmotor nodig hebt — we horen er graag over. Geen druk, geen jargon, alleen eerlijk advies.",
+    "info": {
+      "email": "E-mail",
+      "location": "Locatie",
+      "responseTime": "Reactietijd"
+    },
+    "locationValue": "Remote · Wereldwijd",
+    "responseTimeValue": "24–48 uur",
+    "form": {
+      "name": "Naam",
+      "namePlaceholder": "Jan Jansen",
+      "email": "E-mail",
+      "emailPlaceholder": "jan@bedrijf.com",
+      "service": "Gewenste dienst",
+      "servicePlaceholder": "Selecteer een dienst…",
+      "serviceNotSure": "Nog niet zeker",
+      "budget": "Budget",
+      "budgetOptional": "(optioneel)",
+      "budgetPlaceholder": "Selecteer een bereik…",
+      "budgetDiscuss": "Laten we het bespreken",
+      "message": "Projectdetails",
+      "messagePlaceholder": "Vertel ons over je bedrijf, je doelen en wat je nodig hebt…",
+      "submit": "Bericht versturen",
+      "sending": "Versturen...",
+      "budgetNotSpecified": "Niet opgegeven"
+    },
+    "validation": {
+      "nameMin": "De naam moet minstens 2 tekens bevatten",
+      "emailInvalid": "Voer een geldig e-mailadres in",
+      "serviceRequired": "Selecteer een dienst",
+      "messageMin": "Vertel ons iets meer (minstens 10 tekens)"
+    },
+    "toast": {
+      "success": "Bericht verzonden! We nemen binnen 24–48 uur contact met je op.",
+      "error": "Bericht verzenden mislukt. Mail ons rechtstreeks op {{email}}"
+    }
+  },
+  "footer": {
+    "tagline": "Een design- & ontwikkelstudio die bezoekers omzet in klanten.",
+    "groups": {
+      "studio": {
+        "title": "Studio",
+        "links": {
+          "services": "Diensten",
+          "work": "Ons werk",
+          "about": "Over ons",
+          "contact": "Contact"
+        }
+      },
+      "services": {
+        "title": "Diensten",
+        "links": {
+          "design": "Figma-design & branding",
+          "marketing": "Social media marketing",
+          "landing": "Landingspagina's",
+          "apps": "Web- & mobiele apps"
+        }
+      }
+    },
+    "craftedWith": "Gemaakt met",
+    "by": "door"
+  },
+  "loading": {
+    "label": "Portfolio"
+  },
+  "commandPalette": {
+    "placeholder": "Typ een opdracht of zoek...",
+    "empty": "Geen resultaten gevonden.",
+    "escToClose": "om te sluiten",
+    "groups": {
+      "navigate": "Navigeren",
+      "links": "Links",
+      "actions": "Acties"
+    },
+    "switchToLight": "Schakel naar lichte modus",
+    "switchToDark": "Schakel naar donkere modus"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "body": "Het lijkt erop dat je je op onbekend terrein hebt begeven.",
+    "goHome": "Naar home",
+    "goBack": "Terug"
+  },
+  "language": {
+    "label": "Taal"
+  }
+}
