@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, Calendar, MousePointer } from 'lucide-react';
 import { Link } from 'react-router';
 
@@ -7,16 +8,12 @@ const CanvasWrapper = lazy(() => import('@/components/three/CanvasWrapper'));
 const FloatingObjects = lazy(() => import('@/components/three/FloatingObjects'));
 import TypingAnimation from '@/components/common/TypingAnimation';
 import StarRating from '@/components/common/StarRating';
-import {
-  HERO_HEADLINE,
-  HERO_SUB,
-  NICHE_CHIPS,
-  PRIMARY_CTA,
-  SECONDARY_CTA,
-  TRUST,
-} from '@/constants/site';
+import { PRIMARY_CTA, SECONDARY_CTA, TRUST } from '@/constants/site';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  const chips = t('hero.chips', { returnObjects: true });
+
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* 3D Background — lazy so hero text renders before Three.js loads */}
@@ -50,7 +47,7 @@ const HeroSection = () => {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm text-primary"
           >
             <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
-            Now booking new projects
+            {t('hero.badge')}
           </motion.div>
 
           {/* Headline */}
@@ -60,8 +57,8 @@ const HeroSection = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mb-4 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            {HERO_HEADLINE.pre}{' '}
-            <span className="gradient-text">{HERO_HEADLINE.highlight}</span>
+            {t('hero.headlinePre')}{' '}
+            <span className="gradient-text">{t('hero.headlineHighlight')}</span>
           </motion.h1>
 
           {/* Typing value props */}
@@ -71,7 +68,7 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="mb-6 text-xl font-medium text-muted-foreground sm:text-2xl lg:text-3xl"
           >
-            <span className="text-foreground">We deliver </span>
+            <span className="text-foreground">{t('hero.deliver')}</span>
             <TypingAnimation className="text-accent" />
           </motion.div>
 
@@ -82,7 +79,7 @@ const HeroSection = () => {
             transition={{ delay: 0.6, duration: 0.7 }}
             className="mb-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            {HERO_SUB}
+            {t('hero.sub')}
           </motion.p>
 
           {/* Niche chips */}
@@ -92,7 +89,7 @@ const HeroSection = () => {
             transition={{ delay: 0.65, duration: 0.7 }}
             className="mb-8 flex flex-wrap gap-2"
           >
-            {NICHE_CHIPS.map((chip) => (
+            {chips.map((chip) => (
               <span
                 key={chip}
                 className="glass rounded-full px-3.5 py-1.5 text-xs font-medium text-foreground sm:text-sm"
@@ -114,14 +111,14 @@ const HeroSection = () => {
               className="group flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/40 hover:-translate-y-0.5"
             >
               <Calendar size={16} />
-              {PRIMARY_CTA.label}
+              {t('cta.bookCall')}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </button>
             <Link
               to={SECONDARY_CTA.href}
               className="glass flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-foreground transition-all hover:border-primary/30 hover:text-primary hover:-translate-y-0.5"
             >
-              {SECONDARY_CTA.label}
+              {t('cta.seeWork')}
             </Link>
           </motion.div>
 
@@ -133,7 +130,7 @@ const HeroSection = () => {
             className="mt-8 flex items-center gap-3 text-sm text-muted-foreground"
           >
             <StarRating rating={TRUST.rating} size={15} />
-            <span>{TRUST.line}</span>
+            <span>{t('hero.trust')}</span>
           </motion.div>
         </motion.div>
 
@@ -146,7 +143,7 @@ const HeroSection = () => {
         >
           <div className="flex flex-col items-center gap-2 text-muted-foreground">
             <MousePointer size={16} className="animate-bounce" />
-            <span className="text-xs tracking-widest uppercase">Scroll</span>
+            <span className="text-xs tracking-widest uppercase">{t('common.scroll')}</span>
           </div>
         </motion.div>
       </div>

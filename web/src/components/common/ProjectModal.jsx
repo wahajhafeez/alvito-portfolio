@@ -1,8 +1,10 @@
 import { createPortal } from 'react-dom';
+import { useTranslation } from 'react-i18next';
 import { ExternalLink, Github, X, Tag } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ProjectModal = ({ project, onClose }) => {
+  const { t } = useTranslation();
   if (!project) return null;
 
   return createPortal(
@@ -47,7 +49,7 @@ const ProjectModal = ({ project, onClose }) => {
               {/* badges */}
               <div className="mb-3 flex items-center gap-2">
                 <span className="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium capitalize text-primary">
-                  {project.category}
+                  {t(`projectsSection.categories.${project.category}`)}
                 </span>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium capitalize ${
@@ -56,7 +58,7 @@ const ProjectModal = ({ project, onClose }) => {
                       : 'bg-amber-500/10 text-amber-400'
                   }`}
                 >
-                  {project.status}
+                  {t(`projectsSection.status.${project.status}`)}
                 </span>
               </div>
 
@@ -71,7 +73,7 @@ const ProjectModal = ({ project, onClose }) => {
               {/* tech stack */}
               <div className="mb-6">
                 <h4 className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
-                  <Tag size={14} className="text-primary" /> Tech Stack
+                  <Tag size={14} className="text-primary" /> {t('common.techStack')}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack?.map((tech) => (
@@ -94,7 +96,7 @@ const ProjectModal = ({ project, onClose }) => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/25 transition-all hover:bg-primary/90 hover:-translate-y-0.5"
                   >
-                    <ExternalLink size={15} /> Visit Website
+                    <ExternalLink size={15} /> {t('common.visitWebsite')}
                   </a>
                 )}
                 {project.githubUrl && (
@@ -104,7 +106,7 @@ const ProjectModal = ({ project, onClose }) => {
                     rel="noopener noreferrer"
                     className="glass flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:text-primary"
                   >
-                    <Github size={15} /> Source Code
+                    <Github size={15} /> {t('common.sourceCode')}
                   </a>
                 )}
               </div>

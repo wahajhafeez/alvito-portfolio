@@ -1,21 +1,25 @@
 import { useState, useEffect } from 'react';
-
-const ROLES = [
-  'high-converting websites',
-  'brands that sell',
-  'apps that scale',
-  'marketing that works',
-  'designs that wow',
-];
+import { useTranslation } from 'react-i18next';
 
 const TypingAnimation = ({ className = '' }) => {
+  const { t, i18n } = useTranslation();
+  const roles = t('hero.typing', { returnObjects: true });
+
   const [displayed, setDisplayed] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  // Restart the cycle cleanly when the language switches
   useEffect(() => {
-    const current = ROLES[roleIndex];
+    setDisplayed('');
+    setRoleIndex(0);
+    setCharIndex(0);
+    setIsDeleting(false);
+  }, [i18n.language]);
+
+  useEffect(() => {
+    const current = roles[roleIndex] ?? '';
     const delay = isDeleting ? 40 : 80;
 
     const timeout = setTimeout(() => {
@@ -32,13 +36,13 @@ const TypingAnimation = ({ className = '' }) => {
           setCharIndex((c) => c - 1);
         } else {
           setIsDeleting(false);
-          setRoleIndex((i) => (i + 1) % ROLES.length);
+          setRoleIndex((i) => (i + 1) % roles.length);
         }
       }
     }, delay);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, roleIndex]);
+  }, [charIndex, isDeleting, roleIndex, roles]);
 
   return (
     <span className={className}>

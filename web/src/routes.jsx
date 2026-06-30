@@ -1,9 +1,7 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router';
-import { AnimatePresence } from 'framer-motion';
+import { BrowserRouter, Routes, Route } from 'react-router';
 import Layout from '@/components/layout/Layout';
 import LoadingScreen from '@/components/common/LoadingScreen';
-import PageTransition from '@/components/common/PageTransition';
 import CommandPalette from '@/components/common/CommandPalette';
 import useUiStore from '@/store/uiStore';
 
@@ -15,26 +13,6 @@ const Experience = lazy(() => import('@/pages/Experience'));
 const Contact = lazy(() => import('@/pages/Contact'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 
-const AnimatedRoutes = () => {
-  const location = useLocation();
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route element={<Layout />}>
-          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-          <Route path="/services" element={<PageTransition><Services /></PageTransition>} />
-          <Route path="/work" element={<PageTransition><Projects /></PageTransition>} />
-          <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-          <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
-          <Route path="/experience" element={<PageTransition><Experience /></PageTransition>} />
-          <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </AnimatePresence>
-  );
-};
-
 const AppRoutes = () => {
   const isLoading = useUiStore((s) => s.isLoading);
 
@@ -43,7 +21,19 @@ const AppRoutes = () => {
       {isLoading && <LoadingScreen />}
       <CommandPalette />
       <Suspense fallback={null}>
-        <AnimatedRoutes />
+        <Routes>
+          {/* Layout (navbar/footer) stays mounted; only the page content animates */}
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/work" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Suspense>
     </BrowserRouter>
   );

@@ -1,8 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { useTranslation } from 'react-i18next';
 import useUiStore from '@/store/uiStore';
 
 const LoadingScreen = () => {
+  const { t } = useTranslation();
   const setLoading = useUiStore((s) => s.setLoading);
   const containerRef = useRef(null);
   const counterRef = useRef(null);
@@ -53,7 +55,7 @@ const LoadingScreen = () => {
     >
       <div className="mb-8 text-center">
         <img src="/alvito-logo.png" alt="Alvito Tech logo" className="mx-auto -mb-12 h-44 w-44 object-contain" />
-        <p className="text-muted-foreground mt-2 text-sm tracking-[0.4em] uppercase">Portfolio</p>
+        <p className="text-muted-foreground mt-2 text-sm tracking-[0.4em] uppercase">{t('loading.label')}</p>
       </div>
 
       <div className="bg-muted/30 w-64 overflow-hidden rounded-full">

@@ -1,29 +1,30 @@
+// Navigation structure — `key` maps to a translation in locales (nav.*, footer.groups.*)
 export const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Work', href: '/work' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { key: 'home', href: '/' },
+  { key: 'services', href: '/services' },
+  { key: 'work', href: '/work' },
+  { key: 'about', href: '/about' },
+  { key: 'contact', href: '/contact' },
 ];
 
-// Footer link groups
+// Footer link groups — `group` + `key` map to footer.groups.<group>.links.<key>
 export const FOOTER_LINKS = [
   {
-    title: 'Studio',
+    group: 'studio',
     links: [
-      { label: 'Services', href: '/services' },
-      { label: 'Our Work', href: '/work' },
-      { label: 'About', href: '/about' },
-      { label: 'Contact', href: '/contact' },
+      { key: 'services', href: '/services' },
+      { key: 'work', href: '/work' },
+      { key: 'about', href: '/about' },
+      { key: 'contact', href: '/contact' },
     ],
   },
   {
-    title: 'Services',
+    group: 'services',
     links: [
-      { label: 'Figma Design & Branding', href: '/services' },
-      { label: 'Social Media Marketing', href: '/services' },
-      { label: 'Landing Pages', href: '/services' },
-      { label: 'Web & Mobile Apps', href: '/services' },
+      { key: 'design', href: '/services' },
+      { key: 'marketing', href: '/services' },
+      { key: 'landing', href: '/services' },
+      { key: 'apps', href: '/services' },
     ],
   },
 ];

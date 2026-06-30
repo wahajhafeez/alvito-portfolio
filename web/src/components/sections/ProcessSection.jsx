@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Search, PenTool, Hammer, Rocket } from 'lucide-react';
 import SectionHeading from '@/components/common/SectionHeading';
 import { PROCESS_STEPS } from '@/constants/process';
@@ -6,13 +7,12 @@ import { PROCESS_STEPS } from '@/constants/process';
 const ICON_MAP = { Search, PenTool, Hammer, Rocket };
 
 const ProcessSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <SectionHeading
-          title="How We Work"
-          subtitle="A clear, collaborative process — so you always know what's happening and why."
-        />
+        <SectionHeading title={t('process.heading')} subtitle={t('process.subtitle')} />
 
         <div className="relative grid gap-6 md:grid-cols-4">
           {/* Connecting line (desktop) */}
@@ -35,8 +35,12 @@ const ProcessSection = () => {
                     {step.step}
                   </span>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-foreground">{step.title}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
+                <h3 className="mb-2 text-lg font-semibold text-foreground">
+                  {t(`process.items.${step.step}.title`)}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {t(`process.items.${step.step}.desc`)}
+                </p>
               </motion.div>
             );
           })}
