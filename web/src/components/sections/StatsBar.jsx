@@ -1,16 +1,19 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import StatCounter from '@/components/common/StatCounter';
 // import LogoMarquee from '@/components/common/LogoMarquee';
 import { STATS } from '@/constants/stats';
 
 const StatsBar = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="border-y border-border bg-muted/5 py-16">
       <div className="container-custom">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {STATS.map((stat, i) => (
             <motion.div
-              key={stat.label}
+              key={stat.key}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -18,7 +21,7 @@ const StatsBar = () => {
               className="text-center"
             >
               <StatCounter value={stat.value} suffix={stat.suffix} decimals={stat.decimals} />
-              <div className="mt-2 text-sm text-muted-foreground">{stat.label}</div>
+              <div className="mt-2 text-sm text-muted-foreground">{t(`stats.${stat.key}`)}</div>
             </motion.div>
           ))}
         </div>

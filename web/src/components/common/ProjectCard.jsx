@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { ExternalLink, Github, Layers } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const ProjectCard = ({ project, onClick, index = 0 }) => {
+  const { t } = useTranslation();
   const { title, description, techStack, liveUrl, githubUrl, featured, category, imageUrl } =
     project;
 
@@ -39,13 +41,13 @@ const ProjectCard = ({ project, onClick, index = 0 }) => {
         {/* badges */}
         <div className="absolute left-3 top-3">
           <span className="rounded-full bg-background/70 px-2.5 py-0.5 text-xs font-medium capitalize text-foreground backdrop-blur-sm">
-            {category}
+            {t(`projectsSection.categories.${category}`)}
           </span>
         </div>
         {featured && (
           <div className="absolute right-3 top-3">
             <span className="rounded-full bg-primary px-2.5 py-0.5 text-xs font-medium text-white shadow-md shadow-primary/30">
-              Featured
+              {t('common.featured')}
             </span>
           </div>
         )}
@@ -103,7 +105,7 @@ const ProjectCard = ({ project, onClick, index = 0 }) => {
             className="mt-auto flex w-full items-center justify-center gap-2 rounded-lg border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white hover:shadow-md hover:shadow-primary/25"
           >
             <ExternalLink size={14} />
-            Visit Website
+            {t('common.visitWebsite')}
           </a>
         )}
       </div>

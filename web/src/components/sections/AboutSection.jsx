@@ -1,50 +1,33 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Target, Palette, Layers, Handshake } from 'lucide-react';
 import SectionHeading from '@/components/common/SectionHeading';
 import GlassCard from '@/components/common/GlassCard';
 import { BRAND } from '@/constants/site';
 
+// Structure only — icon + translation key (about.values.<key>.{title,description})
 const VALUES = [
-  {
-    icon: Target,
-    title: 'Results-Driven',
-    description:
-      'We design for outcomes — more leads, more bookings, more revenue. Pretty that performs.',
-  },
-  {
-    icon: Palette,
-    title: 'Design-Led',
-    description: 'Every project starts in Figma. Brand, UX and detail are never an afterthought.',
-  },
-  {
-    icon: Layers,
-    title: 'Full-Service',
-    description:
-      'Design, development, marketing and support — one team, one point of contact, zero handoffs.',
-  },
-  {
-    icon: Handshake,
-    title: 'True Partners',
-    description:
-      'We treat your business like our own. Clear communication, honest advice, long-term thinking.',
-  },
+  { key: 'results', icon: Target },
+  { key: 'design', icon: Palette },
+  { key: 'fullService', icon: Layers },
+  { key: 'partners', icon: Handshake },
 ];
 
+// Structure only — display value + translation key (about.stats.<key>)
 const STATS = [
-  { value: '50+', label: 'Clients Served' },
-  { value: '100+', label: 'Projects Delivered' },
-  { value: '3', label: 'Industries' },
-  { value: '5★', label: 'Avg Rating' },
+  { key: 'clients', value: '50+' },
+  { key: 'projects', value: '100+' },
+  { key: 'industries', value: '3' },
+  { key: 'rating', value: '5★' },
 ];
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding from-background to-muted/10 bg-gradient-to-b">
       <div className="container-custom">
-        <SectionHeading
-          title="About the Studio"
-          subtitle="A design & development studio helping ambitious businesses look — and convert — better online."
-        />
+        <SectionHeading title={t('about.heading')} subtitle={t('about.subtitle')} />
 
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Text Content */}
@@ -73,34 +56,27 @@ const AboutSection = () => {
 
             <div className="text-muted-foreground space-y-4">
               <p className="text-base leading-relaxed">
-                <span className="text-foreground font-semibold">{BRAND.name}</span> is a
-                full-service <span className="text-primary">design &amp; development studio</span>.
-                We build the websites, apps, brands and marketing that turn visitors into clients.
+                <span className="text-foreground font-semibold">{BRAND.name}</span>{' '}
+                {t('about.paragraphs.lead')}
               </p>
-              <p className="text-base leading-relaxed">
-                We started as a small web studio and grew by obsessing over one thing: results.
-                Today we work end-to-end — strategy, Figma design, full-stack development and social
-                media marketing — so our clients get everything they need under one roof.
-              </p>
-              <p className="text-base leading-relaxed">
-                We focus on three industries we know deeply — solar installers, boutique B2B
-                consultants &amp; coaches, and high-end local services — so every project speaks
-                directly to the people you want to win.
-              </p>
+              <p className="text-base leading-relaxed">{t('about.paragraphs.second')}</p>
+              <p className="text-base leading-relaxed">{t('about.paragraphs.third')}</p>
             </div>
 
             {/* Stats */}
             <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
               {STATS.map((stat) => (
                 <motion.div
-                  key={stat.label}
+                  key={stat.key}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   className="text-center"
                 >
                   <div className="gradient-text text-3xl font-bold">{stat.value}</div>
-                  <div className="text-muted-foreground mt-1 text-xs">{stat.label}</div>
+                  <div className="text-muted-foreground mt-1 text-xs">
+                    {t(`about.stats.${stat.key}`)}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -116,7 +92,7 @@ const AboutSection = () => {
           >
             {VALUES.map((value, i) => (
               <motion.div
-                key={value.title}
+                key={value.key}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -126,9 +102,11 @@ const AboutSection = () => {
                   <div className="bg-primary/10 text-primary mb-3 inline-flex rounded-lg p-2.5">
                     <value.icon size={20} />
                   </div>
-                  <h3 className="text-foreground mb-2 font-semibold">{value.title}</h3>
+                  <h3 className="text-foreground mb-2 font-semibold">
+                    {t(`about.values.${value.key}.title`)}
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {value.description}
+                    {t(`about.values.${value.key}.description`)}
                   </p>
                 </GlassCard>
               </motion.div>

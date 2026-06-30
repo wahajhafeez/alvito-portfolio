@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Canvas } from '@react-three/fiber';
 import SectionHeading from '@/components/common/SectionHeading';
 
@@ -7,13 +8,12 @@ const TechSphere = lazy(() => import('@/components/three/TechSphere'));
 import { SKILL_CATEGORIES } from '@/constants/skills';
 
 const SkillsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <SectionHeading
-          title="Our Capabilities"
-          subtitle="The design, marketing and engineering toolkit we use to build and grow our clients' businesses."
-        />
+        <SectionHeading title={t('skills.heading')} subtitle={t('skills.subtitle')} />
 
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* 3D Sphere */}
@@ -39,7 +39,7 @@ const SkillsSection = () => {
           <div className="space-y-6">
             {SKILL_CATEGORIES.map((cat, catIdx) => (
               <motion.div
-                key={cat.category}
+                key={cat.id}
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -51,7 +51,7 @@ const SkillsSection = () => {
                     style={{ background: cat.color }}
                   />
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                    {cat.category}
+                    {t(`skills.categories.${cat.id}`)}
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">

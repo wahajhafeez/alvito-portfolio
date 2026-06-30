@@ -1,0 +1,404 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "work": "Progetti",
+    "about": "Chi siamo",
+    "contact": "Contatti"
+  },
+  "cta": {
+    "bookCall": "Prenota una chiamata gratuita",
+    "seeWork": "Guarda i nostri progetti"
+  },
+  "common": {
+    "scroll": "Scorri",
+    "viewAllWork": "Vedi tutti i progetti",
+    "featured": "In evidenza",
+    "visitWebsite": "Visita il sito",
+    "sourceCode": "Codice sorgente",
+    "techStack": "Stack tecnologico"
+  },
+  "hero": {
+    "badge": "Stiamo accettando nuovi progetti",
+    "headlinePre": "Creiamo siti web, applicazioni web e app mobili che",
+    "headlineHighlight": "favoriscono la crescita",
+    "deliver": "Realizziamo ",
+    "sub": "Alvito Tech è specializzata nella progettazione di siti web moderni, nello sviluppo di potenti applicazioni web e nella creazione di app mobili che aiutano le aziende ad attrarre clienti, migliorare l'efficienza e crescere più rapidamente. Oltre 50 clienti serviti.",
+    "chips": [
+      "Progettazione di siti web",
+      "Sviluppo di applicazioni web",
+      "Sviluppo di app mobili"
+    ],
+    "typing": [
+      "siti ad alta conversione",
+      "marchi che vendono",
+      "app che scalano",
+      "marketing che funziona",
+      "design che stupiscono"
+    ],
+    "trust": "Più di 50 clienti in tutto il mondo si fidano di noi"
+  },
+  "stats": {
+    "clientsServed": "Clienti serviti",
+    "projectsDelivered": "Progetti consegnati",
+    "averageRating": "Valutazione media",
+    "industriesServed": "Settori serviti"
+  },
+  "services": {
+    "heading": "Cosa facciamo",
+    "subtitle": "Un unico studio per tutto ciò di cui il tuo brand ha bisogno per attrarre, convincere e convertire i clienti.",
+    "items": {
+      "design": {
+        "title": "Design Figma & Branding",
+        "blurb": "UI/UX perfette al pixel e identità di marca progettate in Figma — dai wireframe a schermate curate e pronte per la conversione.",
+        "features": ["Design UI/UX", "Sistemi di brand e logo", "Design system", "Prototipi"]
+      },
+      "marketing": {
+        "title": "Social Media Marketing",
+        "blurb": "Contenuti, annunci e campagne di crescita che mettono il tuo brand davanti al pubblico giusto e trasformano i follower in clienti paganti.",
+        "features": ["Strategia di contenuti", "Campagne pubblicitarie a pagamento", "Creatività e reel", "Analisi e crescita"]
+      },
+      "landing": {
+        "title": "Landing page interattive",
+        "blurb": "Landing page veloci, animate e ad alta conversione, create per acquisire lead e prenotare chiamate — ottimizzate per ogni dispositivo.",
+        "features": ["Design orientato alla conversione", "Animazioni fluide", "Acquisizione di lead", "Pronte per l'A/B testing"]
+      },
+      "apps": {
+        "title": "App web e mobili full-stack",
+        "blurb": "Applicazioni web e mobili scalabili, sviluppate end-to-end con lo stack MERN e React Native — robuste, sicure e veloci.",
+        "features": ["App web (MERN)", "App mobili", "API e dashboard", "Pagamenti e autenticazione"]
+      }
+    }
+  },
+  "industries": {
+    "heading": "Chi aiutiamo",
+    "subtitle": "Siamo specializzati in soluzioni digitali — creiamo siti web, applicazioni web e app mobili che aiutano le aziende a crescere, migliorare l'esperienza dei clienti e scalare in modo efficiente.",
+    "items": {
+      "website-design": {
+        "name": "Progettazione di siti web",
+        "tagline": "Design moderni che trasformano i visitatori in clienti",
+        "promise": "Creiamo siti web visivamente accattivanti e incentrati sull'utente, progettati per creare fiducia, rafforzare il tuo brand e generare più richieste e vendite.",
+        "outcomes": ["Design di siti web responsive", "Layout incentrati su UI/UX", "Struttura ottimizzata per la SEO"]
+      },
+      "web-apps": {
+        "name": "Sviluppo di applicazioni web",
+        "tagline": "Soluzioni su misura che ottimizzano e fanno crescere la tua azienda",
+        "promise": "Sviluppiamo potenti applicazioni web su misura per il tuo flusso di lavoro, aiutandoti ad automatizzare i processi, migliorare l'efficienza e offrire migliori esperienze utente.",
+        "outcomes": ["Applicazioni web su misura", "Sistemi di automazione aziendale", "Soluzioni scalabili e sicure"]
+      },
+      "mobile-apps": {
+        "name": "Sviluppo di app mobili",
+        "tagline": "App che coinvolgono gli utenti e fanno crescere la tua azienda",
+        "promise": "Creiamo applicazioni mobili intuitive e ad alte prestazioni che offrono esperienze fluide e mantengono i tuoi clienti connessi.",
+        "outcomes": ["App Android e iOS", "Interfacce intuitive", "Sviluppo orientato alle prestazioni"]
+      }
+    }
+  },
+  "process": {
+    "heading": "Come lavoriamo",
+    "subtitle": "Un processo chiaro e collaborativo — così sai sempre cosa succede e perché.",
+    "items": {
+      "01": {
+        "title": "Scoprire",
+        "desc": "Conosciamo la tua azienda, il tuo pubblico e i tuoi obiettivi — poi tracciamo una strategia pensata per convertire."
+      },
+      "02": {
+        "title": "Progettare",
+        "desc": "Creiamo il brand e l'interfaccia in Figma, iterando con te finché non è perfetto."
+      },
+      "03": {
+        "title": "Sviluppare",
+        "desc": "Sviluppiamo un sito o un'app veloce, responsive e pronta per la produzione, con codice pulito e scalabile."
+      },
+      "04": {
+        "title": "Lanciare e crescere",
+        "desc": "Pubblichiamo, misuriamo e ottimizziamo — con marketing e supporto per continuare ad attrarre clienti."
+      }
+    }
+  },
+  "experience": {
+    "heading": "Il nostro percorso",
+    "subtitle": "Da uno studio web di una sola persona a un team full-service di cui si fidano oltre 50 clienti.",
+    "type": { "milestone": "Traguardo" },
+    "items": {
+      "1": {
+        "title": "Fondazione di Alvito Tech",
+        "company": "Lo studio inizia",
+        "location": "Remote",
+        "period": "2021",
+        "description": "Nato come studio web di una sola persona che creava siti web veloci e moderni — cresciuto rapidamente in un piccolo team ossessionato dal design e dai risultati."
+      },
+      "2": {
+        "title": "Espansione verso design e marketing",
+        "company": "Uno studio full-service",
+        "location": "Remote",
+        "period": "2022",
+        "description": "Abbiamo aggiunto design Figma, branding e social media marketing affinché i clienti potessero ottenere tutto — strategia, design, sviluppo e crescita — sotto lo stesso tetto."
+      },
+      "3": {
+        "title": "Espansione verso lo sviluppo di app mobili e web",
+        "company": "Studio digitale full-service",
+        "location": "In tutto il mondo",
+        "period": "2023",
+        "description": "Cresciuti oltre i siti web verso app mobili complete, applicazioni web, piattaforme SaaS e sistemi ERP — offrendo prodotti digitali end-to-end ad aziende di tutto il mondo con React, Next.js, React Native, Node.js e altro ancora."
+      },
+      "4": {
+        "title": "Oltre 50 clienti serviti",
+        "company": "E continua",
+        "location": "In tutto il mondo",
+        "period": "2024 – oggi",
+        "description": "Oltre 100 aziende si affidano ora ad Alvito Tech per progettare, costruire e far crescere la loro presenza digitale — con una valutazione media di soddisfazione di 5 stelle."
+      }
+    }
+  },
+  "skills": {
+    "heading": "Le nostre competenze",
+    "subtitle": "Il toolkit di design, marketing e ingegneria che usiamo per costruire e far crescere le aziende dei nostri clienti.",
+    "categories": {
+      "design": "Design & Branding",
+      "marketing": "Marketing",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile e Database",
+      "devops": "DevOps & Cloud"
+    }
+  },
+  "testimonials": {
+    "heading": "Cosa dicono i clienti",
+    "subtitle": "Risultati reali ottenuti con installatori di impianti solari, consulenti e attività locali di alta gamma con cui abbiamo lavorato.",
+    "niche": {
+      "Solar": "Solare",
+      "Consulting": "Consulenza",
+      "Local Services": "Servizi locali",
+      "Coaching": "Coaching"
+    },
+    "items": {
+      "1": {
+        "role": "Fondatrice",
+        "quote": "Le nostre richieste di preventivo per il solare sono quasi raddoppiate entro sei settimane dal lancio del nuovo sito. Il funnel di prenotazione che hanno creato funziona e basta."
+      },
+      "2": {
+        "role": "Consulente principale",
+        "quote": "Hanno trasformato una semplice pagina di presentazione in un brand che finalmente è all'altezza delle mie tariffe. Ora ricevo contatti qualificati ogni settimana."
+      },
+      "3": {
+        "role": "Titolare",
+        "quote": "Il nuovo brand e il sito di prenotazione trasmettono davvero un'immagine premium. I clienti lo notano ancora prima di arrivare — le prenotazioni sono aumentate enormemente."
+      },
+      "4": {
+        "role": "CEO",
+        "quote": "Professionali, veloci e proattivi. Le landing page che hanno creato per le nostre campagne pubblicitarie hanno quasi dimezzato il nostro costo per lead."
+      },
+      "5": {
+        "role": "Coach esecutiva",
+        "quote": "Dai design in Figma alla realizzazione finale, ogni dettaglio è stato curato. Il mio programma ora appare di alta gamma quanto i risultati che offro."
+      },
+      "6": {
+        "role": "Direttore",
+        "quote": "Hanno gestito design, sito web e i nostri contenuti social dall'inizio alla fine. Un unico team, zero grattacapi e un brand di cui andiamo fieri."
+      }
+    }
+  },
+  "about": {
+    "heading": "Chi è lo studio",
+    "subtitle": "Uno studio di design e sviluppo che aiuta le aziende ambiziose ad apparire — e convertire — meglio online.",
+    "paragraphs": {
+      "lead": "è uno studio di design e sviluppo full-service. Creiamo i siti web, le app, i brand e il marketing che trasformano i visitatori in clienti.",
+      "second": "Abbiamo iniziato come piccolo studio web e siamo cresciuti concentrandoci su una sola cosa: i risultati. Oggi lavoriamo end-to-end — strategia, design Figma, sviluppo full-stack e social media marketing — così i nostri clienti ottengono tutto ciò di cui hanno bisogno sotto lo stesso tetto.",
+      "third": "Ci concentriamo su tre settori che conosciamo a fondo — installatori di impianti solari, consulenti e coach B2B di alta gamma, e servizi locali di alto livello — così ogni progetto parla direttamente alle persone che vuoi conquistare."
+    },
+    "stats": {
+      "clients": "Clienti serviti",
+      "projects": "Progetti consegnati",
+      "industries": "Settori",
+      "rating": "Valut. media"
+    },
+    "values": {
+      "results": {
+        "title": "Orientati ai risultati",
+        "description": "Progettiamo per ottenere risultati — più lead, più prenotazioni, più ricavi. Bellezza che rende."
+      },
+      "design": {
+        "title": "Guidati dal design",
+        "description": "Ogni progetto inizia in Figma. Brand, UX e dettagli non sono mai un ripensamento."
+      },
+      "fullService": {
+        "title": "Full-service",
+        "description": "Design, sviluppo, marketing e supporto — un unico team, un unico referente, zero passaggi di consegne."
+      },
+      "partners": {
+        "title": "Veri partner",
+        "description": "Trattiamo la tua azienda come la nostra. Comunicazione chiara, consigli onesti, visione a lungo termine."
+      }
+    }
+  },
+  "projectsSection": {
+    "heading": "I nostri progetti",
+    "subtitle": "Una selezione di siti web, app e brand che abbiamo progettato e creato per i clienti.",
+    "filters": {
+      "all": "Tutti",
+      "fullstack": "Fullstack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "categories": {
+      "fullstack": "Fullstack",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "status": {
+      "completed": "completato",
+      "in-progress": "in corso"
+    },
+    "empty": "Nessun progetto trovato.",
+    "items": {
+      "leagues-gg": {
+        "description": "Una piattaforma di statistiche social per i gamer competitivi, per seguire amici e giocatori preferiti, monitorare metriche di prestazione in tempo reale e costruire una community attorno a League of Legends, VALORANT e osu!",
+        "longDescription": "Alvito Tech ha sviluppato l'intero full-stack di Leagues.gg, un'app companion per esport che recupera dati ranked in tempo reale e la cronologia delle partite di migliaia di giocatori. Il frontend in React e MUI mostra classifiche, cronologie delle partite e schede di confronto tra giocatori con aggiornamenti fluidi in tempo reale. Il backend Node.js/Express si connette alle API degli editori di giochi, aggrega le statistiche in MongoDB e serve endpoint paginati veloci. Le funzionalità principali includono feed per seguire gli amici, analisi delle prestazioni per campione e pagine profilo dei giocatori personalizzabili."
+      },
+      "procurement-league": {
+        "description": "Una piattaforma B2B full-stack che accelera l'innovazione nelle pratiche di approvvigionamento tramite corsi, eventi guidati da esperti, discussioni della community e una ricca libreria di risorse per i professionisti degli acquisti di tutto il mondo.",
+        "longDescription": "Alvito Tech ha sviluppato l'intero full-stack di Procurement League, un hub di sviluppo professionale al servizio dei responsabili degli acquisti e della supply chain a livello globale. La piattaforma offre una libreria di corsi e contenuti, la gestione di eventi dal vivo e on-demand, forum della community per i membri e profili di contributori esperti. Realizzata con React, MUI e Tailwind CSS nel frontend e Node.js/Express con MongoDB nel backend, gestisce l'accesso riservato ai membri, l'accesso basato sui ruoli per contributori e membri e flussi di pagamento integrati per gli abbonamenti ai contenuti premium."
+      },
+      "influencify": {
+        "description": "Una piattaforma di influencer marketing full-stack che offre a brand e agenzie l'accesso a oltre 250 milioni di profili di creator su YouTube e TikTok, con filtri avanzati, gestione delle campagne e monitoraggio del ROI.",
+        "longDescription": "Alvito Tech ha sviluppato l'intera applicazione full-stack di Influencify, uno strumento di scoperta degli influencer e gestione delle campagne basato sui dati. Il frontend React con componenti MUI alimenta una sofisticata interfaccia di ricerca e filtro su un database di 250 milioni di profili di creator, con dashboard analitiche per tassi di engagement, dati demografici del pubblico e ROI delle campagne. Il backend Node.js/Express gestisce l'ingestione di API ad alto volume da YouTube e TikTok, offre un'API per sviluppatori white-label e gestisce l'accesso multi-ruolo per brand, agenzie e amministratori. MongoDB archivia i profili dei creator, i dati delle campagne e i dati di gestione delle relazioni."
+      },
+      "tugamemaster": {
+        "description": "Un marketplace full-stack che collega i giocatori occasionali con game master professionisti. I game master pubblicano e gestiscono le sessioni; i giocatori sfogliano, prenotano e pagano — tutto in un unico posto.",
+        "longDescription": "Alvito Tech ha sviluppato l'intera applicazione full-stack di TuGameMaster, un marketplace di nicchia per sessioni di gioco da tavolo e online. I game master professionisti possono registrarsi, creare un profilo che mette in mostra le loro competenze ed esperienze, programmare sessioni con prezzi flessibili e ricevere pagamenti tramite gli account collegati Stripe. I giocatori sfogliano le sessioni per titolo del gioco, durata, prezzo e livello di esperienza richiesto, quindi prenotano e pagano in sicurezza nell'app. La piattaforma offre anche un blog per i contenuti di gioco, un sistema di chat in tempo reale tra game master e giocatori, una dashboard di gestione delle prenotazioni e un pannello di monitoraggio dei pagamenti. Realizzata con React e Ant Design nel frontend, Redux per lo stato, NestJS con PostgreSQL nel backend e Stripe per l'elaborazione dei pagamenti end-to-end."
+      },
+      "yoogo": {
+        "description": "Un marketplace social unificato dove creator, aziende e acquirenti si connettono per condividere contenuti, scoprire prodotti ed effettuare transazioni — il tutto con una portata 100% organica e senza filtri algoritmici.",
+        "longDescription": "Alvito Tech ha sviluppato l'intero frontend di Yoogo, una piattaforma di social commerce di nuova generazione che unisce creazione di contenuti, community e commercio in un unico posto. Abbiamo realizzato un lettore video personalizzato con streaming adattivo, integrato Braintree per pagamenti in-app fluidi e implementato funzionalità in tempo reale tramite WebSocket, così gli utenti vedono aggiornamenti live su feed e vetrine. L'interfaccia è stata realizzata con Next.js, MUI e Tailwind CSS, con Redux a gestire uno stato globale complesso tra dashboard dei creator, annunci del marketplace e flussi di acquisto."
+      },
+      "canonizer": {
+        "description": "Una piattaforma full-stack per il dibattito strutturato e la costruzione collaborativa del consenso. Gli utenti propongono, perfezionano e classificano idee concorrenti con visualizzazioni animate in tempo reale che mostrano l'evoluzione dei campi di opinione nel tempo.",
+        "longDescription": "Alvito Tech ha realizzato una ricostruzione full-stack di Canonizer — uno strumento unico di democrazia deliberativa in cui gli utenti formano «campi» attorno alle idee e monitorano il consenso in tempo reale. Abbiamo progettato il backend con NestJS e un database SQL relazionale per gestire complessi alberi di argomenti gerarchici e la logica di appartenenza ai campi. Nel frontend, Next.js con Ant Design e Tailwind CSS alimenta un'interfaccia pulita e ricca di informazioni, mentre D3.js guida visualizzazioni animate ad albero e cronologiche che rendono immediatamente visibile l'evoluzione del consenso. Redux gestisce lo stato globale tra thread di argomenti profondamente nidificati e flussi di voto in tempo reale."
+      },
+      "voltora-solar": {
+        "description": "Un frontend pulito e orientato alla conversione per un'azienda di energia solare. Mette in mostra servizi e pacchetti di sistema e stimola la generazione di lead con un'interfaccia moderna pensata per gli installatori solari.",
+        "longDescription": "Alvito Tech ha sviluppato l'intero frontend di Voltora Solar, il sito web di un'azienda di energia solare progettato per informare i visitatori e convertirli in lead qualificati. La realizzazione con React + MUI + Tailwind CSS offre un layout responsive, sezioni di servizi animate, tabelle di confronto dei pacchetti, un carosello di testimonianze e un modulo di richiesta. Redux gestisce lo stato dell'interfaccia attraverso flussi utente in più passaggi."
+      },
+      "nexus-grid": {
+        "description": "Una piattaforma intelligente di monitoraggio solare con monitoraggio dell'energia in tempo reale, analisi delle prestazioni, avvisi istantanei e report dettagliati — per massimizzare la produzione e l'affidabilità del sistema.",
+        "longDescription": "Alvito Tech ha sviluppato l'intero frontend di Nexus Grid, una dashboard SaaS per la gestione del solare. Realizzata con React, MUI, Tailwind CSS e Redux, l'applicazione fornisce una dashboard di monitoraggio in tempo reale che traccia la produzione totale, la potenza attuale e l'efficienza del sistema. Le funzionalità principali includono grafici di produzione dell'energia, monitoraggio del risparmio di CO₂, pannelli di controllo intelligenti, notifiche di avviso istantanee e report di prestazione programmati — il tutto presentato in un'interfaccia pulita e ricca di dati, ottimizzata per gli operatori del solare."
+      },
+      "lumiere-aesthetics": {
+        "description": "Un sito web premium per una clinica estetica e di bellezza di alta gamma. Progettato per creare fiducia, mostrare i trattamenti e favorire le prenotazioni di appuntamenti tramite un'interfaccia elegante e lussuosa.",
+        "longDescription": "Alvito Tech ha sviluppato il frontend di Lumière Aesthetics, una clinica boutique di bellezza e benessere. Il sito React + MUI + Tailwind CSS presenta un linguaggio di design lussuoso con tonalità calde, animazioni fluide, un catalogo dei trattamenti, gallerie prima/dopo, profili dei professionisti, testimonianze dei clienti e un modulo di prenotazione appuntamenti online. L'interfaccia è stata realizzata per riflettere il brand premium della clinica e convertire i visitatori in consulenze prenotate."
+      },
+      "oralence-smile": {
+        "description": "Un sito web moderno per uno studio dentistico che copre odontoiatria generale, estetica e pediatrica. Un design pulito e affidabile con elenco dei servizi, profili del team e prenotazione degli appuntamenti.",
+        "longDescription": "Alvito Tech ha progettato e sviluppato il frontend di Oralence Smile Studio, uno studio dentistico full-service. Il sito React + MUI + Tailwind CSS elenca tutte le categorie di trattamento — odontoiatria generale, odontoiatria estetica, ortodonzia, impianti, sbiancamento dei denti e cure pediatriche — con pagine di servizio dedicate, una sezione di presentazione del team, testimonianze dei pazienti e un modulo di richiesta appuntamento online. La combinazione di colori verde acqua e bianco rafforza la fiducia clinica mantenendo al contempo un'esperienza accogliente."
+      },
+      "valancia-leisure": {
+        "description": "Un sito web per un club lifestyle e di comunità con sport, istruzione, benessere e servizi per la famiglia — progettato per attrarre iscrizioni e mostrare l'intera esperienza del club.",
+        "longDescription": "Alvito Tech ha sviluppato il frontend del Valancia Leisure Club, una comunità lifestyle per famiglie di alta gamma. Il sito React + MUI + Tailwind CSS mostra l'intera gamma di servizi del club — spazi per biblioteca e apprendimento, aree gioco per bambini, campi sportivi, lezioni di yoga e fitness e spazi verdi familiari curati. Collage di immagini animati, una sezione di piani di iscrizione, un esploratore delle strutture e un calendario degli eventi stimolano il coinvolgimento e le iscrizioni. Redux gestisce lo stato dell'interfaccia attraverso filtri interattivi e flussi di prenotazione."
+      },
+      "finance-tracker": {
+        "description": "Un'app full-stack per la gestione delle finanze personali con monitoraggio di entrate/uscite, pianificazione del budget, obiettivi di risparmio, monitoraggio degli investimenti e report dettagliati per categoria.",
+        "longDescription": "Alvito Tech ha sviluppato l'intera applicazione full-stack Finance Tracker. La dashboard React + MUI + Tailwind CSS mostra una panoramica in tempo reale di saldo totale, entrate, uscite e progressi del risparmio. Le funzionalità includono grafici del flusso di cassa, grafici a ciambella delle spese per categoria, cronologia delle transazioni, monitoraggio del budget rispetto alle spese effettive per categoria, barre di avanzamento degli obiettivi di risparmio, promemoria delle bollette e una sezione investimenti. Il backend Node.js/Express con MongoDB archivia tutti i dati finanziari degli utenti, con un modello freemium che offre un upgrade premium per conti illimitati e report avanzati."
+      },
+      "solarops-pro": {
+        "description": "Una piattaforma ERP solare full-stack completa che gestisce lead, progetti, clienti, magazzino, approvvigionamento, finanza, installazione e manutenzione per le aziende del solare.",
+        "longDescription": "Alvito Tech ha sviluppato il sistema ERP full-stack SolarOps Pro per le aziende di installazione di impianti solari. La dashboard React + MUI + Tailwind offre una panoramica amministrativa del numero totale di progetti (128), della capacità installata (2,45 MW), delle vendite totali (1,24 mln $) e delle fatture in sospeso. I moduli includono la gestione dei lead, il monitoraggio dei progetti con pipeline di stato (completato/in corso/in attesa/in pausa), CRM clienti, magazzino di pannelli solari e inverter, approvvigionamento, finanza con grafici ricavi/spese, pianificazione delle installazioni e monitoraggio della manutenzione. Il backend Node.js/Express con MongoDB alimenta tutti i moduli con un controllo degli accessi basato sui ruoli."
+      }
+    }
+  },
+  "ctaSection": {
+    "headlinePre": "Pronto a trasformare i visitatori in",
+    "headlineHighlight": "clienti paganti?",
+    "subtitle": "Prenota una chiamata gratuita e senza impegno. Esamineremo la tua presenza attuale e ti mostreremo esattamente come crescere."
+  },
+  "contact": {
+    "heading": "Facciamo crescere la tua azienda",
+    "subtitle": "Parlaci del tuo progetto e dei tuoi obiettivi. Ti risponderemo entro 24-48 ore con i prossimi passi.",
+    "infoHeading": "Prenota una chiamata conoscitiva gratuita",
+    "infoBody": "Che tu abbia bisogno di un nuovo sito web, di un restyling del brand, di un'app o di un motore di marketing — saremo felici di ascoltarti. Nessuna pressione, nessun gergo, solo consigli onesti.",
+    "info": {
+      "email": "E-mail",
+      "location": "Località",
+      "responseTime": "Tempo di risposta"
+    },
+    "locationValue": "Remote · In tutto il mondo",
+    "responseTimeValue": "24-48 ore",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "E-mail",
+      "emailPlaceholder": "mario@azienda.com",
+      "service": "Servizio richiesto",
+      "servicePlaceholder": "Seleziona un servizio…",
+      "serviceNotSure": "Non sono ancora sicuro",
+      "budget": "Budget",
+      "budgetOptional": "(facoltativo)",
+      "budgetPlaceholder": "Seleziona una fascia…",
+      "budgetDiscuss": "Ne parliamo",
+      "message": "Dettagli del progetto",
+      "messagePlaceholder": "Parlaci della tua azienda, dei tuoi obiettivi e di ciò di cui hai bisogno…",
+      "submit": "Invia messaggio",
+      "sending": "Invio in corso...",
+      "budgetNotSpecified": "Non specificato"
+    },
+    "validation": {
+      "nameMin": "Il nome deve contenere almeno 2 caratteri",
+      "emailInvalid": "Inserisci un indirizzo e-mail valido",
+      "serviceRequired": "Seleziona un servizio",
+      "messageMin": "Forniscici qualche dettaglio in più (almeno 10 caratteri)"
+    },
+    "toast": {
+      "success": "Messaggio inviato! Ti risponderemo entro 24-48 ore.",
+      "error": "Invio del messaggio non riuscito. Scrivici direttamente a {{email}}"
+    }
+  },
+  "footer": {
+    "tagline": "Uno studio di design e sviluppo che trasforma i visitatori in clienti.",
+    "groups": {
+      "studio": {
+        "title": "Studio",
+        "links": {
+          "services": "Servizi",
+          "work": "I nostri progetti",
+          "about": "Chi siamo",
+          "contact": "Contatti"
+        }
+      },
+      "services": {
+        "title": "Servizi",
+        "links": {
+          "design": "Design Figma & Branding",
+          "marketing": "Social Media Marketing",
+          "landing": "Landing page",
+          "apps": "App web e mobili"
+        }
+      }
+    },
+    "craftedWith": "Creato con",
+    "by": "da"
+  },
+  "loading": {
+    "label": "Portfolio"
+  },
+  "commandPalette": {
+    "placeholder": "Digita un comando o cerca...",
+    "empty": "Nessun risultato trovato.",
+    "escToClose": "per chiudere",
+    "groups": {
+      "navigate": "Naviga",
+      "links": "Link",
+      "actions": "Azioni"
+    },
+    "switchToLight": "Passa alla modalità chiara",
+    "switchToDark": "Passa alla modalità scura"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "body": "Sembra che tu ti sia avventurato in territorio inesplorato.",
+    "goHome": "Vai alla home",
+    "goBack": "Torna indietro"
+  },
+  "language": {
+    "label": "Lingua"
+  }
+}

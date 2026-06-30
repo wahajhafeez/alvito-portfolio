@@ -1,18 +1,25 @@
+import { useTranslation } from 'react-i18next';
 import SectionHeading from '@/components/common/SectionHeading';
 import TestimonialCard from '@/components/common/TestimonialCard';
 import { TESTIMONIALS } from '@/constants/testimonials';
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
+
+  const testimonials = TESTIMONIALS.map((item) => ({
+    ...item,
+    role: t(`testimonials.items.${item.id}.role`),
+    quote: t(`testimonials.items.${item.id}.quote`),
+    niche: t(`testimonials.niche.${item.niche}`),
+  }));
+
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <SectionHeading
-          title="What Clients Say"
-          subtitle="Real results from solar installers, consultants and high-end local businesses we've worked with."
-        />
+        <SectionHeading title={t('testimonials.heading')} subtitle={t('testimonials.subtitle')} />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {TESTIMONIALS.map((testimonial, i) => (
+          {testimonials.map((testimonial, i) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} index={i} />
           ))}
         </div>

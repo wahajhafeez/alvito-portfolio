@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation, Link } from 'react-router';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Menu, X, Terminal, Calendar } from 'lucide-react';
 import ThemeSwitcher from '@/components/common/ThemeSwitcher';
+import LanguageSwitcher from '@/components/common/LanguageSwitcher';
 import useUiStore from '@/store/uiStore';
 import { NAV_LINKS } from '@/constants/navigation';
 import { BRAND, PRIMARY_CTA } from '@/constants/site';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const toggleCommandPalette = useUiStore((s) => s.toggleCommandPalette);
@@ -56,7 +59,7 @@ const Navbar = () => {
             >
               {({ isActive }) => (
                 <>
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                   {isActive && (
                     <motion.div
                       layoutId="activeNav"
@@ -72,6 +75,7 @@ const Navbar = () => {
 
         {/* Right Actions */}
         <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           <ThemeSwitcher />
           <button
             onClick={toggleCommandPalette}
@@ -86,7 +90,7 @@ const Navbar = () => {
             className="hidden items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-md shadow-primary/25 transition-all hover:bg-primary/90 hover:-translate-y-0.5 md:flex"
           >
             <Calendar size={14} />
-            {PRIMARY_CTA.label}
+            {t('cta.bookCall')}
           </button>
 
           {/* Mobile Toggle */}
@@ -124,7 +128,7 @@ const Navbar = () => {
                     )
                   }
                 >
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                 </NavLink>
               ))}
               <button
@@ -132,7 +136,7 @@ const Navbar = () => {
                 className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-white shadow-md shadow-primary/25"
               >
                 <Calendar size={15} />
-                {PRIMARY_CTA.label}
+                {t('cta.bookCall')}
               </button>
             </nav>
           </motion.div>

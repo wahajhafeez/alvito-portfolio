@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Send, Mail, MapPin, Clock } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'sonner';
@@ -11,25 +12,34 @@ import GlassCard from '@/components/common/GlassCard';
 import { SERVICES } from '@/constants/services';
 import { CONTACT } from '@/constants/site';
 
-const SERVICE_OPTIONS = [...SERVICES.map((s) => s.title), 'Not sure yet'];
-const BUDGET_OPTIONS = ['< $1k', '$1k – $3k', '$3k – $7k', '$7k+', 'Let’s discuss'];
-
-const schema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  service: z.string().min(1, 'Please select a service'),
-  budget: z.string().optional(),
-  message: z.string().min(10, 'Please tell us a bit more (10+ characters)'),
-});
-
-const INFO_ITEMS = [
-  { icon: Mail, label: 'Email', value: CONTACT.email, href: `mailto:${CONTACT.email}` },
-  { icon: MapPin, label: 'Location', value: CONTACT.location, href: null },
-  { icon: Clock, label: 'Response Time', value: CONTACT.responseTime, href: null },
-];
-
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [isPending, setIsPending] = useState(false);
+
+  // Rebuilt when language changes so validation messages stay localised
+  const schema = useMemo(
+    () =>
+      z.object({
+        name: z.string().min(2, t('contact.validation.nameMin')),
+        email: z.string().email(t('contact.validation.emailInvalid')),
+        service: z.string().min(1, t('contact.validation.serviceRequired')),
+        budget: z.string().optional(),
+        message: z.string().min(10, t('contact.validation.messageMin')),
+      }),
+    [t]
+  );
+
+  const serviceOptions = [
+    ...SERVICES.map((s) => t(`services.items.${s.id}.title`)),
+    t('contact.form.serviceNotSure'),
+  ];
+  const budgetOptions = ['< $1k', '$1k – $3k', '$3k – $7k', '$7k+', t('contact.form.budgetDiscuss')];
+
+  const infoItems = [
+    { icon: Mail, label: t('contact.info.email'), value: CONTACT.email, href: `mailto:${CONTACT.email}` },
+    { icon: MapPin, label: t('contact.info.location'), value: t('contact.locationValue'), href: null },
+    { icon: Clock, label: t('contact.info.responseTime'), value: t('contact.responseTimeValue'), href: null },
+  ];
 
   const {
     register,
@@ -49,15 +59,15 @@ const ContactSection = () => {
           email: data.email,
           title: data.service,
           service: data.service,
-          budget: data.budget || 'Not specified',
+          budget: data.budget || t('contact.form.budgetNotSpecified'),
           message: data.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
-      toast.success('Message sent! We\'ll get back to you within 24–48 hours.');
+      toast.success(t('contact.toast.success'));
       reset();
     } catch {
-      toast.error('Failed to send message. Please email us directly at ' + CONTACT.email);
+      toast.error(t('contact.toast.error', { email: CONTACT.email }));
     } finally {
       setIsPending(false);
     }
@@ -66,10 +76,7 @@ const ContactSection = () => {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <SectionHeading
-          title="Let's Grow Your Business"
-          subtitle="Tell us about your project and goals. We'll get back to you within 24–48 hours with next steps."
-        />
+        <SectionHeading title={t('contact.heading')} subtitle={t('contact.subtitle')} />
 
         <div className="grid gap-12 lg:grid-cols-5">
           {/* Info Column */}
@@ -81,15 +88,12 @@ const ContactSection = () => {
             className="lg:col-span-2 space-y-6"
           >
             <div>
-              <h3 className="mb-2 text-xl font-semibold text-foreground">Book a free discovery call</h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                Whether you need a new website, a brand refresh, an app or a marketing engine — we'd
-                love to hear about it. No pressure, no jargon, just honest advice.
-              </p>
+              <h3 className="mb-2 text-xl font-semibold text-foreground">{t('contact.infoHeading')}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{t('contact.infoBody')}</p>
             </div>
 
             <div className="space-y-4">
-              {INFO_ITEMS.map((item) => (
+              {infoItems.map((item) => (
                 <GlassCard key={item.label} className="flex items-center gap-4 p-4">
                   <div className="rounded-lg bg-primary/10 p-2.5 text-primary flex-shrink-0">
                     <item.icon size={18} />
@@ -121,20 +125,20 @@ const ContactSection = () => {
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium text-foreground">Name</label>
+                    <label className="mb-1.5 block text-sm font-medium text-foreground">{t('contact.form.name')}</label>
                     <input
                       {...register('name')}
-                      placeholder="Jane Doe"
+                      placeholder={t('contact.form.namePlaceholder')}
                       className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary"
                     />
                     {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name.message}</p>}
                   </div>
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium text-foreground">Email</label>
+                    <label className="mb-1.5 block text-sm font-medium text-foreground">{t('contact.form.email')}</label>
                     <input
                       {...register('email')}
                       type="email"
-                      placeholder="jane@company.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                       className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary"
                     />
                     {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email.message}</p>}
@@ -143,16 +147,16 @@ const ContactSection = () => {
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium text-foreground">Service you need</label>
+                    <label className="mb-1.5 block text-sm font-medium text-foreground">{t('contact.form.service')}</label>
                     <select
                       {...register('service')}
                       defaultValue=""
                       className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary [&>option]:bg-background [&>option]:text-foreground"
                     >
                       <option value="" disabled className="bg-background text-foreground">
-                        Select a service…
+                        {t('contact.form.servicePlaceholder')}
                       </option>
-                      {SERVICE_OPTIONS.map((opt) => (
+                      {serviceOptions.map((opt) => (
                         <option key={opt} value={opt} className="bg-background text-foreground">
                           {opt}
                         </option>
@@ -162,15 +166,15 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <label className="mb-1.5 block text-sm font-medium text-foreground">
-                      Budget <span className="text-muted-foreground">(optional)</span>
+                      {t('contact.form.budget')} <span className="text-muted-foreground">{t('contact.form.budgetOptional')}</span>
                     </label>
                     <select
                       {...register('budget')}
                       defaultValue=""
                       className="w-full rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary [&>option]:bg-background [&>option]:text-foreground"
                     >
-                      <option value="" className="bg-background text-foreground">Select a range…</option>
-                      {BUDGET_OPTIONS.map((opt) => (
+                      <option value="" className="bg-background text-foreground">{t('contact.form.budgetPlaceholder')}</option>
+                      {budgetOptions.map((opt) => (
                         <option key={opt} value={opt} className="bg-background text-foreground">
                           {opt}
                         </option>
@@ -180,11 +184,11 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block text-sm font-medium text-foreground">Project details</label>
+                  <label className="mb-1.5 block text-sm font-medium text-foreground">{t('contact.form.message')}</label>
                   <textarea
                     {...register('message')}
                     rows={5}
-                    placeholder="Tell us about your business, your goals and what you need…"
+                    placeholder={t('contact.form.messagePlaceholder')}
                     className="w-full resize-none rounded-lg border border-border bg-input px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary"
                   />
                   {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message.message}</p>}
@@ -197,11 +201,11 @@ const ContactSection = () => {
                   className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-white shadow-lg shadow-primary/25 transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {isPending ? (
-                    <>Sending...</>
+                    <>{t('contact.form.sending')}</>
                   ) : (
                     <>
                       <Send size={16} />
-                      Send Message
+                      {t('contact.form.submit')}
                     </>
                   )}
                 </motion.button>

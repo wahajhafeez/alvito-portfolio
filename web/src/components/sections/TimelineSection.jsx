@@ -1,5 +1,5 @@
-import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Rocket, Palette, Target, Users } from 'lucide-react';
 import SectionHeading from '@/components/common/SectionHeading';
 import { EXPERIENCE_ITEMS } from '@/constants/experience';
@@ -60,13 +60,22 @@ const TimelineItem = ({ item, index }) => {
 };
 
 const TimelineSection = () => {
+  const { t } = useTranslation();
+
+  const items = EXPERIENCE_ITEMS.map((item) => ({
+    ...item,
+    type: t(`experience.type.${item.type}`),
+    title: t(`experience.items.${item.id}.title`),
+    company: t(`experience.items.${item.id}.company`),
+    location: t(`experience.items.${item.id}.location`),
+    period: t(`experience.items.${item.id}.period`),
+    description: t(`experience.items.${item.id}.description`),
+  }));
+
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <SectionHeading
-          title="Our Journey"
-          subtitle="From a one-person web studio to a full-service team trusted by 50+ clients."
-        />
+        <SectionHeading title={t('experience.heading')} subtitle={t('experience.subtitle')} />
 
         {/* Desktop: alternating timeline | Mobile: single column */}
         <div className="relative">
@@ -74,7 +83,7 @@ const TimelineSection = () => {
           <div className="from-primary/50 via-accent/30 absolute top-0 left-1/2 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b to-transparent md:block" />
 
           <div className="flex flex-col gap-8">
-            {EXPERIENCE_ITEMS.map((item, index) => (
+            {items.map((item, index) => (
               <TimelineItem key={item.id} item={item} index={index} />
             ))}
           </div>
