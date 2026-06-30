@@ -62,7 +62,7 @@ const LanguageSwitcher = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.96 }}
             transition={{ duration: 0.15 }}
-            className="glass-strong absolute right-0 z-50 mt-2 min-w-[170px] overflow-hidden rounded-xl border border-border p-1 shadow-xl"
+            className="absolute right-0 z-50 mt-2 min-w-[170px] overflow-hidden rounded-xl border border-border bg-popover p-1 text-popover-foreground shadow-xl"
           >
             {SUPPORTED_LANGUAGES.map((lang) => {
               const isActive = lang.code === current;
